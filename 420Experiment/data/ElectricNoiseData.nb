@@ -1,0 +1,152 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5006,        144]
+NotebookOptionsPosition[      4062,        124]
+NotebookOutlinePosition[      4405,        139]
+CellTagsIndexPosition[      4362,        136]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<\\\\\\\\qomsa.physik.hu-berlin.de\\\\QOM_SHARE\\\\projects\\\\\
+HYRIS\\\\08_Measurements\\\\2019_05_15 power dependence, doppler broadening\\\
+\\2019_05_15 qtut power\>\"", ",", "\"\<power_electric_noise.csv\>\""}], 
+      "}"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Flatten", "[", "data", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.767951472186302*^9, 3.7679514801887336`*^9}, {
+   3.767951545055709*^9, 3.7679515570338697`*^9}, {3.767951605332299*^9, 
+   3.767951609204089*^9}, {3.767951700931288*^9, 3.767951706589059*^9}, 
+   3.7679519498611736`*^9, 3.7679520569070916`*^9, {3.76795209392496*^9, 
+   3.7679521454705167`*^9}},
+ CellLabel->
+  "In[158]:=",ExpressionUUID->"88f7ae0d-f385-49d5-bb03-287d67f2a6d9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", "-=", 
+   RowBox[{"Mean", "[", "data", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.767952382023488*^9, 3.767952387174569*^9}},
+ CellLabel->
+  "In[160]:=",ExpressionUUID->"ead55f6c-6ec5-4197-87c6-4fcd1a109d75"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dataCopy", "=", 
+   RowBox[{"data", "/", 
+    RowBox[{"StandardDeviation", "[", "data", "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7679523891294527`*^9, 3.767952435239112*^9}},
+ CellLabel->
+  "In[161]:=",ExpressionUUID->"2a30cafd-be7e-44ba-9831-901fd93cce02"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"uni", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CDF", "[", 
+      RowBox[{
+       RowBox[{"NormalDistribution", "[", 
+        RowBox[{"0", ",", "1"}], "]"}], ",", "#"}], "]"}], "&"}], "/@", 
+    "dataCopy"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7679531282471952`*^9, 3.767953142793912*^9}},
+ CellLabel->
+  "In[162]:=",ExpressionUUID->"f775d208-22c1-4ba5-9dc2-2dba2da91ca3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"int", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Round", "[", 
+      RowBox[{"#", "*", 
+       RowBox[{"10", "^", "7"}]}], "]"}], "&"}], "/@", "uni"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7679531467756186`*^9, 3.7679531513850083`*^9}, {
+  3.767953248823388*^9, 3.7679532601309133`*^9}, {3.7679533598000407`*^9, 
+  3.7679533709936314`*^9}},
+ CellLabel->
+  "In[163]:=",ExpressionUUID->"d4b485d4-de4f-482f-a9bd-75b818d03a64"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"uniBin", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"IntegerDigits", "[", 
+       RowBox[{"#", ",", "2"}], "]"}], "&"}], "/@", "int"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7679533006327944`*^9, 3.7679533324106855`*^9}},
+ CellLabel->
+  "In[164]:=",ExpressionUUID->"9fa99e7d-5221-4adf-8912-642184434961"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Str01", "=", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{"ToString", "/@", "uniBin"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.767953377590886*^9, 3.7679533971547194`*^9}},
+ CellLabel->
+  "In[165]:=",ExpressionUUID->"b7ef0bbc-56fd-4b6f-8e49-1f7a4af972e2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+       "\"\<electricNoise.txt\>\""}], "}"}], "]"}], ",", "Str01"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7679534063484707`*^9, 3.767953429261371*^9}},
+ CellLabel->
+  "In[166]:=",ExpressionUUID->"d62cb9cc-3a19-4965-ac25-7758878d31a7"]
+},
+WindowSize->{1366, 695},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 929, 20, 86, "Input",ExpressionUUID->"88f7ae0d-f385-49d5-bb03-287d67f2a6d9"],
+Cell[1490, 42, 255, 6, 28, "Input",ExpressionUUID->"ead55f6c-6ec5-4197-87c6-4fcd1a109d75"],
+Cell[1748, 50, 301, 7, 28, "Input",ExpressionUUID->"2a30cafd-be7e-44ba-9831-901fd93cce02"],
+Cell[2052, 59, 416, 12, 28, "Input",ExpressionUUID->"f775d208-22c1-4ba5-9dc2-2dba2da91ca3"],
+Cell[2471, 73, 467, 13, 28, "Input",ExpressionUUID->"d4b485d4-de4f-482f-a9bd-75b818d03a64"],
+Cell[2941, 88, 384, 11, 28, "Input",ExpressionUUID->"9fa99e7d-5221-4adf-8912-642184434961"],
+Cell[3328, 101, 298, 7, 28, "Input",ExpressionUUID->"b7ef0bbc-56fd-4b6f-8e49-1f7a4af972e2"],
+Cell[3629, 110, 429, 12, 28, "Input",ExpressionUUID->"d62cb9cc-3a19-4965-ac25-7758878d31a7"]
+}
+]
+*)
+

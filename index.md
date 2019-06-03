@@ -22,6 +22,8 @@ Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
 
 Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.
 
+Einige git-infos sind [hier](https://github.com/ZufallsmaschineSS19/ZufallsmaschineSS19.github.io/blob/master/gitInfos/git_terminal.md) zu sehen.
+
 Anleitung zum editieren dieser Dateien [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Test ob LaTeX sich hier anschalten laesst: $$r = \sqrt(r)$$

@@ -1,7 +1,7 @@
 
 Hallo.
 
-![bild1](sarah/quokka1_2x.jpg)
+![bild1](images/CodeCogsEqn.gif)
 
 
 **Hier die Abstimmung darueber, ob Quokkas suess sind:**

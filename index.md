@@ -36,3 +36,5 @@ Test ob LaTeX sich hier anschalten laesst: $$r = \sqrt(r)$$
 weiterer Test
 
 ![fomel0](images/CodeCogsEqn.gif)
+
+Online-Tool, mit dem ihr Formeln in Bilder umwandeln könnt: [iTex2lmg](http://www.sciweavers.org/free-online-latex-equation-editor)

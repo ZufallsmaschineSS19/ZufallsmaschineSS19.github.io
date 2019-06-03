@@ -18,7 +18,7 @@ Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
 ## bestes Projekt:
-[Pascal's Projekt](bestproject/test_project.md)
+[Pascal's Projekt](bestProject/test_project.md)
 # Website- Tests
 
 Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.

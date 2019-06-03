@@ -13,4 +13,5 @@ Hallo.
 
 
 *Und hier noch ein Video von Quokkas beim essen:*
-[Klicke hier für ein cooles Video](https://www.youtube.com/watch?v=zFO-0AlgSDI)
+<a href="https://www.youtube.com/watch?v=zFO-0AlgSDI" target="_blank"><img src="https://www.youtube.com/watch?v=zFO-0AlgSDI" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>

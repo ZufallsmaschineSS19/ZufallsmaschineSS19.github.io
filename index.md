@@ -20,6 +20,8 @@ Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
 
 # Website- Tests
 
+Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.
+
 Anleitung zum editieren dieser Dateien [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Test ob LaTeX sich hier anschalten laesst: $$r = \sqrt(r)$$

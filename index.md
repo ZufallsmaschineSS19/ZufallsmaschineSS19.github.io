@@ -23,6 +23,9 @@ Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
 ## super Projekt:
 [Sarahs Projekt](sarah/sarah2.md)
 
+## ZenerZufall
+[Tims und Gertruds Projekt](ZehnerZufalll/Beschreibung.md)
+
 # Website- Tests
 
 Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.

@@ -1,1 +1,1 @@
-![bild](/bdistaj24014.pdf)
+![bild](../bdistaj24014.pdf)

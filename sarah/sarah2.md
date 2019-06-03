@@ -1,7 +1,7 @@
 
 Hallo.
 
-![alt text](sarah/quokka1_2x.jpg "Bestes Bild")
+![bild1](sarah/quokka1_2x.jpg)
 
 
 **Hier die Abstimmung darueber, ob Quokkas suess sind:**
@@ -10,3 +10,7 @@ Hallo.
 | ------------- |:-------------:| -----:   |
 | suess         | 276317        |  100     |
 | nicht suess   | 0             |  0       |
+
+
+*Und hier noch ein Video von Quokkas beim essen:*
+[Klicke hier für ein cooles Video](https://www.youtube.com/watch?v=zFO-0AlgSDI)

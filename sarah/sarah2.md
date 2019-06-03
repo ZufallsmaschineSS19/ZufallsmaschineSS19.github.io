@@ -15,4 +15,4 @@ Hallo.
 *Und hier noch ein Video von Quokkas:*
 
 
-[Klicke hier fue erin cooles Video](https://www.youtube.com/watch?v=zFO-0AlgSDI)
+[Klicke hier fuer ein cooles Video](https://www.youtube.com/watch?v=zFO-0AlgSDI)

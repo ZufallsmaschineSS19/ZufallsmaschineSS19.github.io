@@ -1,4 +1,4 @@
 
 Hallo.
 
-![alt text](sarah/quokka1_2x.jpg "Logo Title Text 1")
+![alt text](sarah/quokka1_2x.jpg "Bestes Bild")

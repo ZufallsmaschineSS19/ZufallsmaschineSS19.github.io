@@ -25,19 +25,19 @@ zu finden.
 
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
-### P Projekt:
+### Palscals Projekt:
 
-[Pascal's Projekt](pascal/test_project.md)
+[Pascals Projekt](pascal/test_project.md)
 
-## S Projekt:
+### Sarahs Projekt:
 
 [Sarahs Projekt](sarah/sarah2.md)
 
-## ZenerZufall
+### ZenerZufall
 
 [Tims und Gertruds Projekt](ZehnerZufall/Beschreibung.md)
 
-### Website - Tests
+## Website - Tests & Hinweise
 
 Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.
 

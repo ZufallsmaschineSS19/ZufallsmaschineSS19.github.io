@@ -1,6 +1,10 @@
 {% include mathjax.html %}
 
-# Projektbeschreibung : Q-Tutorium - Die Zufallsmaschine (SoSe 2019)
+# Q-Tutorium
+
+# Die Zufallsmaschine (SoSe 2019)
+
+## Projektbeschreibung
 
 Im Gegensatz zu üblichen Lehrveranstaltungen werden in dieser nicht nur
 Forschungsthemen behandelt oder diskutiert, sondern selbstständig der
@@ -8,25 +12,32 @@ gesamte Forschungsprozess durchlaufen. Es werden von den Studierenden eigenstän
 
 Das Abschlussprojekt des WiSe 2018/19 wurde auf der Langen Nacht der Wissenschaften [(offizielle Website)](https://www.langenachtderwissenschaften.de/) präsentiert. Die präsentierten Poster und ausgelegten Spiele und Experimente kannst du [hier] finden.
 
-Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren. 
+Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
+Die Programme und Bilde, sowie der Quellcode für diese
+Website sind auf
+[Github](https://github.com/ZufallsmaschineSS19/ZufallsmaschineSS19.github.io)
+zu finden.
 
 
-# Projekte :
+## Projekte :
 
-## Lineare Kongruenzgeneratoren
+### Lineare Kongruenzgeneratoren
 
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
-## bestes Projekt:
-[Pascal's Projekt](bestProject/test_project.md)
+### P Projekt:
 
-## super Projekt:
+[Pascal's Projekt](pascal/test_project.md)
+
+## S Projekt:
+
 [Sarahs Projekt](sarah/sarah2.md)
 
 ## ZenerZufall
+
 [Tims und Gertruds Projekt](ZehnerZufall/Beschreibung.md)
 
-# Website- Tests
+### Website - Tests
 
 Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.
 

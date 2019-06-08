@@ -27,7 +27,7 @@ zu finden.
 
 ### Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken:
 
-[Pascals Projekt](pascal/Neuronale Netzwerke.md )
+[Pascals Projekt](pascal/Neuronale Netzwerke.md)
 
 ### Sarahs Projekt:
 

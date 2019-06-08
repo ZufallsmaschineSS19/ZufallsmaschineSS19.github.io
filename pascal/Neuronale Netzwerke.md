@@ -28,8 +28,7 @@ In der Recherche zu diesem Projekt und besonders für ein tieferes Verständnis 
 ## Idee und erste Tests
 Bei den ersten Untersuchungen wurde sich besonders an dem Paper ['Learning from Pseudo-Randomness with an
 Artificial Neural Network– Does God Play Pseudo-Dice?'](https://arxiv.org/ftp/arxiv/papers/1801/1801.01117.pdf) von Fenglei Fan und Ge Wang orientiert.
-
-Wie fügt man hier Quellen ein???!!!
-
-In dieser Arbeit wurden die Nachkommastellen der Zahl \pi auf ihre Zufälligkeit untersucht. 
+In dieser Arbeit wurden die Nachkommastellen der transzendente und somit auch irrationalen Zahl π auf ihre Zufälligkeit untersucht. Man geht davon aus, dass die Nachkommastellen der Zahl π vollkommen Zufällig sind und deshalb keine Periode enthalten dürften. Somit sollte man theoretisch, wenn man die Nachkommastellen der Zahl Pi erraten möchte eine 10%tige Chance haben, die richtige Ziffer (digit) voherzusagen. In der Arbeit selbst wurden die Nachkommastellen in eine Binäre Bit-Folge umgewandelt, indem alle Stellen mit Ziffern 0-4 zu 0 und alle Ziffern 5-9 zu 1 umgewandelt wurden. Laut der Arbeit sollte dies die Zufälligkeit erhalten und die Vorhersage mithilfe des Netzwerks vereinfachen.
+Diese Binäre Bit-Folge wurde
+Das erstaunliche Ergebnis dieser Arbeit ist, das
 

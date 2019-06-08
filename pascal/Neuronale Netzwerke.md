@@ -23,7 +23,7 @@ Die Idee dahinter ist, wenn das Netzwerk genug Trainingsbeispiel gesehen/gelernt
 
 Dies ist natürlich nur eine sehr kurze und oberflächliche Beschreibung. Es gibt viele verschiedene Arten von Netzwerken die für verschiedene Arten von Daten besser geeignet sind. Ausserdem ergeben sich besonders beim trainieren des Netzwerks weitere Probleme, wie das Überfitten, was im Prinzip die zu gute Beschreibung der Trainingsdaten aber eine dadurch schlechte Beschreibung von unbekannten Daten benennt. Dadurch ergibt sich das Problem, wann das Training beendet werden sollte, Zudem ergeben sich weitere Spitzfindigkeiten beim Optimierungsprozess selbst, bei dem es viele verschiedene gibt.
 
-Für ein tieferes Verständnis können besonders die kostenlosen Kurse [von Adrew Ng.]()
+In der Recherche zu diesem Projekt und besonders für ein tieferes Verständnis von Neuronalen Netzwerken waren die kostenlosen Kurse von [Adrew Ng.](https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0), sowie ältere [Vorlesungsskripte](http://cs229.stanford.edu/syllabus.html) besonders hilfreich.
 
 ## Idee und erste Tests
 Bei den ersten Untersuchungen wurde sich besonders an dem Paper 'Learning from Pseudo-Randomness with an

@@ -17,10 +17,13 @@ eigentlich bei 50% liegen sollte) überprüft werden.
 
 
 ## Was ist machine learning eigentlich?
-Im machine learning gibt es verschiedene Disziplinen. Hier soll sich mit dem 'supervised learning' Beispielsweise mit Neuronalen Netzwerken, beschäftigt werden. Beim 'supervised learning' wird ein Problem durch einen Input und einen dazugehörigen markierten Output beschrieben. Als Beispiel kann hier eine Folge von Zufallszahlen genommen werden. Der Input könnten die ersten 5 Zahlen der Folge sein, der zugehörige Output die 6. Zahl der Folge. Diese Paare von Inputs und Outputs werden auch Trainings-Set oder Trainings-Daten genannt. Ein anderes, weitaus bekannteres Beispiel, wäre die Klassifikation eines Bildes (also die Pixel als Inputs) in Katze oder nicht Katze (Output). 
-Das Neuronale Netzwerk bzw. die Netzwerk-Funktion, die von den Inputs zu den Outputs abbildet, wird dann mithilfe des 'Backpropagation'-Algorythmus optimiert, um die gewählten Trainings-Daten möglichst gut zu Beschreiben. 
+Im machine learning gibt es verschiedene Disziplinen. Hier soll sich mit dem 'supervised learning' und besonders mit Neuronalen Netzwerken beschäftigt werden. Beim 'supervised learning' wird ein Problem durch einen Input und einen dazugehörigen markierten Output beschrieben. Als Beispiel kann hier eine Folge von Zufallszahlen genommen werden. Der Input könnten die ersten 5 Zahlen der Folge sein, der zugehörige Output die 6. Zahl der Folge. Diese Paare von Inputs und Outputs werden auch Trainings-Set oder Trainings-Daten genannt. Ein anderes, weitaus bekannteres, Beispiel wäre die Klassifikation eines Bildes (also die Pixel als Inputs) in ein Bild einer Katze oder keiner Katze (Output). Das Ziel ist, dass das Neuronale Netzwerk, was im Prinzip nur eine komplizierte nichtlineare Funktion mit sehr vielen Parametern ist, die bekannten Inputs auf die zugehörigen Ouputs abbildet.
+Um  dies zu erreichen kann das Neuronale Netzwerk bzw. die Netzwerk-Funktion mithilfe des 'Backpropagation'-Algorythmus optimiert werden, um die gewählten Trainings-Daten möglichst gut zu Beschreiben. 
+Die Idee dahinter ist, wenn das Netzwerk genug Trainingsbeispiel gesehen/gelernt hat, sollte es ein grobes Verständnis besitzen was eine Katze ausmacht und dieses auf neue und unbekannte Inputs, also in diesem Fall Bilder, Anwenden können und diese hoffentlich richtig Klassifizieren.
 
-Dies ist nur eine sehr kurze und oberflächliche Beschreibung, 
+Dies ist natürlich nur eine sehr kurze und oberflächliche Beschreibung. Es gibt viele verschiedene Arten von Netzwerken die für verschiedene Arten von Daten besser geeignet sind. Ausserdem ergeben sich besonders beim trainieren des Netzwerks weitere Probleme, wie das Überfitten, was im Prinzip die zu gute Beschreibung der Trainingsdaten aber eine dadurch schlechte Beschreibung von unbekannten Daten benennt. Dadurch ergibt sich das Problem, wann das Training beendet werden sollte, Zudem ergeben sich weitere Spitzfindigkeiten beim Optimierungsprozess selbst, bei dem es viele verschiedene gibt.
+
+Für ein tieferes Verständnis können besonders die kostenlosen Kurse [von Adrew Ng.]()
 
 ## Idee und erste Tests
 Bei den ersten Untersuchungen wurde sich besonders an dem Paper 'Learning from Pseudo-Randomness with an

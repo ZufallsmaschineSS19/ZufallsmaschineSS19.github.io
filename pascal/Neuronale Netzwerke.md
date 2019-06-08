@@ -60,4 +60,4 @@ Die Ergebnisse sind erstaunlich, es ergibt sich selbst für den 5-sigma Bereich 
 
 ## Test anderer Netzwerk-Strukturen
 ### Test eines tieferen Netzwerks
-Aufgrund der erstaunlich guten Ergebnisse des vorherigen Experiments mit einem für heutige Verhältnisse relativ kleinen und einfachen Netzwerk soll nun ein deutlich größeres Netzwerk mit einer größeren Anzahl Inputs und Trainingsbeispielen genutzt.
+Aufgrund der erstaunlich guten Ergebnisse des vorherigen Experiments mit einem für heutige Verhältnisse relativ kleinen und einfachen Netzwerk soll nun ein deutlich größeres Netzwerk mit einer größeren Anzahl Inputs und Trainingsbeispielen genutzt werden.

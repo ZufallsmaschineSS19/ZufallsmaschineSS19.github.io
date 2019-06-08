@@ -8,7 +8,7 @@
 1. erster eintrag in der liste
   1. unterliste
   
-[sheet sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 Reference-style: 
 ![alt text][logo]

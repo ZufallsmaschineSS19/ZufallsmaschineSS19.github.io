@@ -58,6 +58,6 @@ Trainings-Set | 0.5098 | 0.0005
 
 Die Ergebnisse sind erstaunlich, es ergibt sich selbst für den 5-sigma Bereich ein Erwartungswert von über 50%. Absolut betrachtet liegt die Abweichung zu 50% zwar nur in der Größenordnung 0.01% Prozent, jedoch ist dieses Ergebnis für ein so einfaches und kleines Netzwerk, sowie die geringe Anzahl an Trainingsdaten und Inputs sehr überraschend.
 
-##Test anderer Netzwerk-Strukturen
-###Test eines tieferen Netzwerks
+## Test anderer Netzwerk-Strukturen
+### Test eines tieferen Netzwerks
 Aufgrund der erstaunlich guten Ergebnisse des vorherigen Experiments mit einem für heutige Verhältnis relativ kleinen  und einfachen Netzwerk soll nun ein deutlich größeres Netzwerk mit einer größeren Anzahl Inputs und Trainingsbeispielen genutzt.

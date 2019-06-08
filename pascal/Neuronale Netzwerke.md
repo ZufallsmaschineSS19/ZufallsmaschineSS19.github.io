@@ -1,4 +1,4 @@
-# Untersuchung von Pseudo-Zufallszahlen mithilfe von Neuronalen Netzwerken
+# Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken
 
 ## Einleitung
 Wie zuvor bereits erklärt wurde, haben Zufallszahlen viele Anwendungsbereiche, besonders in der Cryptographie, beim Glücksspiel 

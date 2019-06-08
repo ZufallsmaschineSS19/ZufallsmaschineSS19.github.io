@@ -50,7 +50,10 @@ Als Netzwerk wurde die selbe Struktur wie in der Arbeit benutzt, also 6 Inputs, 
 
 Nun wurde der Trainingsprozess mit dem zuvor genannten Netzwerk und Trainingsalgorithmus 100 mal ausgeführt und der Anteil der richtigen Vorhersagen für jeden Durchgang aufgenommen. Nun wurde der Mittelwert, die Standardabweichung und dann der Vertrauensbereich mithilfe des Student-T Faktors von t=1.00508 (für 100 Messwerte und den 1-sigma Bereich) bzw. t=5.03272 (für 100 Messwerte und den 5-sigma Bereich) berechnet. 
 
-
+Daten-Set | Mittelwert | 5-sigma Vertrauensbereich
+T1 | 0.50056 | 0.00017
+T2 | 0.50028 | 0.00006
+Trainings-Set | 0.5098 | 0.0004
 
 Die Ergebnisse sind erstaunlich, es ergibt sich selbst für den 5-sigma Bereich ein Erwartungswert von über 50%. Absolut betrachtet liegt die Abweichung zu 50% zwar nur in der Größenordnung 0.01% Prozent, jedoch ist dieses Ergebnis für ein so einfaches und kleines Netzwerk, sowie die geringe Anzahl an Trainingsdaten überraschend.
 

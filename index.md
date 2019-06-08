@@ -25,9 +25,9 @@ zu finden.
 
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
-### Palscals Projekt:
+### Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken:
 
-[Pascals Projekt](pascal/test_project.md)
+[Pascals Projekt](pascal/Neuronale Netzwerke.md )
 
 ### Sarahs Projekt:
 

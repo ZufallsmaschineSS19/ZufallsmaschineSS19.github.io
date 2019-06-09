@@ -59,7 +59,7 @@ Trainings-Set | 0.5098 | 0.0005
 Die Ergebnisse sind erstaunlich, es ergibt sich selbst für den 5-sigma Bereich ein Erwartungswert von über 50%. Absolut betrachtet liegt die Abweichung zu 50% zwar nur in der Größenordnung 0.01% Prozent, jedoch ist dieses Ergebnis für ein so einfaches und kleines Netzwerk, sowie die geringe Anzahl an Trainingsdaten und Inputs sehr überraschend.
 
 ## Test anderer Netzwerk-Strukturen
-### Test eines tieferen Netzwerks
+### Nutzung von mehr Neuronen
 Aufgrund der erstaunlich guten Ergebnisse des vorherigen Experiments mit einem für heutige Verhältnisse relativ kleinen und einfachen Netzwerk sollen nun weitere Netzwerke getestet werden.
 
 Hierzu wurde zunächst ein Netzwerk mit wieder 6 Inputs und 3 Ebenen, jedoch dieses mal [6,120,80,2] Neuronen in den jeweiligen Ebenen genutzt. Der Trainingsprozess wurde wie zuvor 100 mal ausgeführt. Die folgenden Anteile an richtigen Vorhersagen ergaben sich:
@@ -72,6 +72,7 @@ Trainings-Set | 0.5116 | 0.0007
 
 Trotz der erhöhten Anzahl an Neuronen scheint sich an den Ergebnissen nichts zu ändern.
 
+### Nutzung von mehr Ebenen und Neuronen
 Nun wurde ein deutlich tieferes Netzwerk mit 10 Ebenen, 6 Inputs und der Struktur [6,32,64,124,248,248,124,64,32,16,2] genutzt. Wieder wurde wie zuvor das Netzwerk trainiert, jedoch nun eine batch-Größe von 20,000 verwendet, um das Training zu Beschleunigen. Folgendes ergab sich:
 
 Daten-Set | Mittelwert | 5-sigma Vertrauensbereich
@@ -82,4 +83,5 @@ Trainings-Set | 0.5056 | 0.0026
 
 Das Netzwerk liefert schelchtere Ergebnisse als zuvor. Dies könnte daran liegen, dass ein größeres Netzwerk auch mehr Epochen, also längeres Training benötigt, um alle Parameter anzupassen. Jedoch ergeben sich auch bei einer größeren Anzahl an Epochen ähnliche Ergebnisse. Besonders auffällig ist, das diese weitaus mehr Schwanken als die der kleineren Netzwerke. Auch beim Trainingsprozess selbst ergeben sich weitaus größere Schwankungen.
 
-Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen könnten.
+### Nutzung von mehr Ebenen, Neuronen sowie mehr Inputs und Trainingsbeispielen
+Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen sollten.

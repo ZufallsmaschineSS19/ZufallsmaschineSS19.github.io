@@ -85,3 +85,11 @@ Das Netzwerk liefert schelchtere Ergebnisse als zuvor. Dies könnte daran liegen
 
 ### Nutzung von mehr Ebenen, Neuronen sowie mehr Inputs und Trainingsbeispielen
 Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen sollten. Zudem werden aufgrund der erhöhten Komplexität des Models nun mehr Trainingsbeispiele genutzt. Weiterhin wird nun beim Training das Trainings-Set in ein tatsächliches Trainings-Set und ein 'Vergleichs-Set' aufgeteilt, was genutzt werden soll, um Über-fitten zu erkennen. Im Fall von über-fitten sollte der Anteil von richtigen Vorhersagen auf dem verlgeichs-Set wieder sinken. Ab diesem Punkt wird das Training beendet und das beste Netzwerk aller Epochen auf dem Vergleichs-Set zum Test auf einem Test-Set verwendet.
+
+### Nutzung eines einfachen 'Recurrent'-Netzwerks
+
+### Ntzung eines tieferen 'Recurrent'-Netzwerks
+
+## Zusammenfassung der Ergebnisse sowie kurze Diskussion
+
+## Ideen für weiterführende Tests

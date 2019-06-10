@@ -73,7 +73,7 @@ Trainings-Set | 0.5116 | 0.0007
 Trotz der erhöhten Anzahl an Neuronen scheint sich an den Ergebnissen nichts zu ändern.
 
 ### Nutzung von mehr Ebenen und Neuronen
-Nun wurde ein deutlich tieferes Netzwerk mit 10 Ebenen, 6 Inputs und der Struktur [6,32,64,124,248,248,124,64,32,16,2] genutzt. Wieder wurde wie zuvor das Netzwerk trainiert, jedoch nun eine batch-Größe von 20,000 verwendet, um das Training zu Beschleunigen. Folgendes ergab sich:
+Nun wurde ein deutlich tieferes Netzwerk mit 10 Ebenen, 6 Inputs und der Struktur [6,32,64,124,248,248,124,64,32,16,2] genutzt. Zusätzlich wurde in diesem Netzwerk aller 2 Ebenen eine ['batch-normalization'](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) Ebene, sowie beim Trainieren eine ['Dropout'-Ebene](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) genutzt. Ansonsten wurde wie zuvor das Netzwerk trainiert, jedoch nun eine batch-Größe von 20,000 verwendet, um das Training zu Beschleunigen. Folgendes ergab sich:
 
 Daten-Set | Mittelwert | 5-sigma Vertrauensbereich
 --- | --- | ---

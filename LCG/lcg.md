@@ -2,9 +2,6 @@
 
 # Lineare Kongruenzgeneratoren
 
-<h1 id="linear-congruential-generators">Linear Congruential Generators</h1>
-<p><span class="math inline">\(X_{n+1} = A \cdot X_{n} + C \mod M\)</span></p>
+<span class="math inline">\(X_{n+1} = A \cdot X_{n} + C \mod M\)</span>
 
 $$r = \sqrt(A)$$
-
-$r = \sqrt(A)$

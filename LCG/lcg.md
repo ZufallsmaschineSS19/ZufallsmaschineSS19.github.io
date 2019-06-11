@@ -9,7 +9,7 @@
 </ul>
 <p>The starting value is usually denoted as <span class="math inline">\(X_{0}\)</span> with <span class="math inline">\(0 \leq X_{0} &lt; M\)</span>.</p>
 <p>To now generate a new random number from a starting point <span class="math inline">\(X_{n}\)</span> (for the sake of generality we set <span class="math inline">\(n = 0\)</span>), we simply calculate</p>
-<p><span class="math display">\[X_{n+1} = A * X_{n} + C \mod M\]</span>.</p>
+<p><span class="math display">\[X_{n+1} = A * X_{n} + C \mod M \mathrm{.}\]</span></p>
 <p>Since all values are discrete the result of the linear transformation <span class="math inline">\(R = A * X_{n} + C\)</span> is again a discrete number. Through the modulo operation <span class="math inline">\(X_{n+1} = R \mod M\)</span> we assert <span class="math inline">\(0 \leq X_{n+1} &lt; M\)</span>.</p>
 <h2 id="a-few-examples">A few examples</h2>
 <p>To get a feeling for this formula we choose the parameters and see what we receive.</p>

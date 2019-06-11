@@ -2,6 +2,6 @@
 
 # Lineare Kongruenzgeneratoren
 
-<span class="math inline">\(X_{n+1} = A \cdot X_{n} + C \mod M\)</span>
+<p><span class="math inline">\(X_{n+1} = A \cdot X_{n} + C \mod M\)</span></p>
 
 $$r = \sqrt(A)$$

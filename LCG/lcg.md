@@ -15,7 +15,7 @@
 <h3 id="m-9-a-2-c-0-x_0-1"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
 <p>These parameters generate the following sequence of numbers:</p>
 <p><span class="math display">\[ 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, \dots \]</span></p>
-<p>We can see that it repeats itself very quickly. This is of course due to the small modulus we choose. Furthermore we can see that it does not cover all the values in the interval <span class="math inline">\(\left(0, M\right)\)</span>. If we now choose a starting value that is any number in the sequence above, we will obtain the same sequence again. So let’s choose a value that has not occured yet.</p>
+<p>We can see that it repeats itself very quickly. This is of course due to the small modulus we choose. Furthermore we can see that it does not cover all the values in the interval <span class="math inline">\(\left(0, M\right)\)</span>. If we now choose a starting value that is any number in the sequence above, we will obtain the same sequence again. So let’s choose a value that has not occurred yet.</p>
 <h3 id="m-9-a-2-c-0-x_0-3"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 3\)</span></h3>
 <p>These parameters generate the following sequence of numbers:</p>
 <p><span class="math display">\[6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, \dots\]</span></p>
@@ -26,11 +26,16 @@
 <p><span class="math display">\[33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots\]</span></p>
 <p>This appears to be a much better sequence. At first glance we can not spot repeating values and we are also unable to predict a successor to some value. The only obvious shortcoming is the small modulus. A modulus of <span class="math inline">\(M = 251\)</span> causes the values to only be in the range <span class="math inline">\(\left( 0, M\right)\)</span>. After <span class="math inline">\(250\)</span> numbers the values will definitely start repeating.</p>
 <h2 id="testing-for-randomness">Testing for randomness</h2>
-<p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends [<a href="#schindler">2</a>] a series of statistical tests. These tests look at the binary sequence of the random numbers.</p>
-<p>The binary sequence of <a href="#m-251-a-33-c-0-x_0-1">example three</a> would be</p>
-<p><span class="math display">\[ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, 00110110, 10111110, \dots \]</span></p>
+<p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends a series of statistical tests [<a href="#schindler">2</a>]. These tests look at the binary sequence of the random numbers.</p>
+<p>The binary sequence of <a href="#m-251-a-33-c-0-x_0-1">example three</a> would be <span class="math display">\[ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots \]</span></p>
+<p>There are a total of five statistical tests recommended:</p>
+<h3 id="monobit-test">Monobit Test</h3>
+<h3 id="poker-test">Poker Test</h3>
+<h3 id="runs-test">Runs Test</h3>
+<h3 id="long-runs-test">Long Runs Test</h3>
+<h3 id="autocorrelation-test">Autocorrelation Test</h3>
 <h2 id="references">References</h2>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
-<li><a name="schindler">[2]</a> Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
+<li><a name="schindler">[2]</a> Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf" class="uri">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
 </ul>

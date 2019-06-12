@@ -26,7 +26,7 @@ These parameters generate the following sequence of numbers:
 
 $$ 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, \dots $$
 
-We can see that it repeats itself very quickly. This is of course due to the small modulus we choose. Furthermore we can see that it does not cover all the values in the interval $\left(0, M\right)$. If we now choose a starting value that is any number in the sequence above, we will obtain the same sequence again. So let's choose a value that has not occured yet.
+We can see that it repeats itself very quickly. This is of course due to the small modulus we choose. Furthermore we can see that it does not cover all the values in the interval $\left(0, M\right)$. If we now choose a starting value that is any number in the sequence above, we will obtain the same sequence again. So let's choose a value that has not occurred yet.
 
 ### $M = 9$, $A = 2$, $C = 0$, $X_{0} = 3$
 
@@ -48,13 +48,24 @@ This appears to be a much better sequence. At first glance we can not spot repea
 
 ## Testing for randomness
 
-Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends [[2](#schindler)] a series of statistical tests. These tests look at the binary sequence of the random numbers.
+Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends a series of statistical tests [[2](#schindler)]. These tests look at the binary sequence of the random numbers.
 
-The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be 
+The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be
+$$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots $$
 
-$$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, 00110110, 10111110, \dots $$
+There are a total of five statistical tests recommended:
+
+### Monobit Test
+
+### Poker Test
+
+### Runs Test
+
+### Long Runs Test
+
+### Autocorrelation Test
 
 ## References
 
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
- * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](), 1999.
+ * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf), 1999.

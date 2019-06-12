@@ -31,7 +31,9 @@
 <p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted <span class="math inline">\(b_{i}\)</span> (for the <span class="math inline">\(i\)</span>th bit).</p>
 <p>There are a total of five statistical tests recommended:</p>
 <h3 id="monobit-test">Monobit Test</h3>
-<p>We sum up all bits in this binary string. The result has to conform to a distribution.</p>
+<p>We sum up all bits in this binary string.</p>
+<p><span class="math display">\[ X_{b} = \sum_{i=1}^{i=20000} b_{i}\]</span></p>
+<p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>.</p>
 <h3 id="poker-test">Poker Test</h3>
 <h3 id="runs-test">Runs Test</h3>
 <h3 id="long-runs-test">Long Runs Test</h3>

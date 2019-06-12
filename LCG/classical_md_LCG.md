@@ -44,9 +44,13 @@ We obtain
 
 $$33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots$$
 
-This appears to be a much better sequence. At first glance we can not spot repeating values.
+This appears to be a much better sequence. At first glance we can not spot repeating values and we are also unable to predict a successor to some value. The only obvious shortcoming is the small modulus. A "small" modules of $M = 251$ causes the values to only be in the range $\left( 0, M\right)$. After $250$ numbers the values will definitely start repeating.
+
+## Testing for randomness
+
+Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers.
 
 ## References
 
- * Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
- * Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](), 1999.
+ * [1] Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
+ * [2] Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](), 1999.

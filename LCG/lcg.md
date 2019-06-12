@@ -24,9 +24,11 @@
 <h3 id="m-251-a-33-c-0-x_0-1"><span class="math inline">\(M = 251\)</span>, <span class="math inline">\(A = 33\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
 <p>We obtain</p>
 <p><span class="math display">\[33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots\]</span></p>
-<p>This appears to be a much better sequence. At first glance we can not spot repeating values.</p>
+<p>This appears to be a much better sequence. At first glance we can not spot repeating values and we are also unable to predict a successor to some value. The only obvious shortcoming is the small modulus. A “small” modules of <span class="math inline">\(M = 251\)</span> causes the values to only be in the range <span class="math inline">\(\left( 0, M\right)\)</span>. After <span class="math inline">\(250\)</span> numbers the values will definitely start repeating.</p>
+<h2 id="testing-for-randomness">Testing for randomness</h2>
+<p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers.</p>
 <h2 id="references">References</h2>
 <ul>
-<li>Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
-<li>Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
+<li>[1] Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
+<li>[2] Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
 </ul>

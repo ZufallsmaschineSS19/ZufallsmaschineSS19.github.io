@@ -50,10 +50,11 @@ This appears to be a much better sequence. At first glance we can not spot repea
 
 Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends a series of statistical tests [[2](#schindler)]. These tests look at the binary sequence of the random numbers.
 
-The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be
-$$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots $$
+The binary number sequence of [example three](#m-251-a-33-c-0-x_0-1) would be
+$$ 00100001, 01010101, 00101100, 11000101, 11100010, 10110011, 10000110, \dots $$
 
 To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly $20000$ bits long. This binary string is denoted $b$, individual bits are denoted $b_{i}$ (for the $i$th bit).
+$$ b = 00100001010101010010110011000101111000101011001110000110\dots $$
 
 There are a total of five statistical tests recommended:
 
@@ -63,9 +64,12 @@ We sum up all bits in this the string $b$.
 
 $$ X_{b} = \sum_{i=1}^{i=20000} b_{i}$$
 
-To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally likely ($50 \%$). Therefore we expect the roughly the same number of ones as we have zeros.
+To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable ($\tfrac{1}{2}$). Therefore we expect the roughly the same number of ones as we have zeros.
 
 ### Poker Test
+
+We divide the binary sequence into segments of four bits each,
+$$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, 0011, 1000, 0110, \dots $$
 
 ### Runs Test
 

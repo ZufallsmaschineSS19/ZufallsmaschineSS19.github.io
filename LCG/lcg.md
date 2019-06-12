@@ -27,14 +27,15 @@
 <p>This appears to be a much better sequence. At first glance we can not spot repeating values and we are also unable to predict a successor to some value. The only obvious shortcoming is the small modulus. A modulus of <span class="math inline">\(M = 251\)</span> causes the values to only be in the range <span class="math inline">\(\left( 0, M\right)\)</span>. After <span class="math inline">\(250\)</span> numbers the values will definitely start repeating.</p>
 <h2 id="testing-for-randomness">Testing for randomness</h2>
 <p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends a series of statistical tests [<a href="#schindler">2</a>]. These tests look at the binary sequence of the random numbers.</p>
-<p>The binary sequence of <a href="#m-251-a-33-c-0-x_0-1">example three</a> would be <span class="math display">\[ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots \]</span></p>
-<p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted <span class="math inline">\(b_{i}\)</span> (for the <span class="math inline">\(i\)</span>th bit).</p>
+<p>The binary number sequence of <a href="#m-251-a-33-c-0-x_0-1">example three</a> would be <span class="math display">\[ 00100001, 01010101, 00101100, 11000101, 11100010, 10110011, 10000110, \dots \]</span></p>
+<p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted <span class="math inline">\(b_{i}\)</span> (for the <span class="math inline">\(i\)</span>th bit). <span class="math display">\[ b = 00100001010101010010110011000101111000101011001110000110\dots \]</span></p>
 <p>There are a total of five statistical tests recommended:</p>
 <h3 id="monobit-test">Monobit Test</h3>
 <p>We sum up all bits in this the string <span class="math inline">\(b\)</span>.</p>
 <p><span class="math display">\[ X_{b} = \sum_{i=1}^{i=20000} b_{i}\]</span></p>
-<p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally likely (<span class="math inline">\(50 \%\)</span>). Therefore we expect the roughly the same number of ones as we have zeros.</p>
+<p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable (<span class="math inline">\(\tfrac{1}{2}\)</span>). Therefore we expect the roughly the same number of ones as we have zeros.</p>
 <h3 id="poker-test">Poker Test</h3>
+<p>We divide the binary sequence into segments of four bits each, <span class="math display">\[ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, 0011, 1000, 0110, \dots \]</span></p>
 <h3 id="runs-test">Runs Test</h3>
 <h3 id="long-runs-test">Long Runs Test</h3>
 <h3 id="autocorrelation-test">Autocorrelation Test</h3>

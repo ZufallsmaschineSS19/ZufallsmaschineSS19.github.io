@@ -48,7 +48,7 @@ This appears to be a much better sequence. At first glance we can not spot repea
 
 ## Testing for randomness
 
-Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The BSI the German Bundesamt für Sicherheit in der Informationstechnik) [[1](schindler)] recommends a series of statistical tests.
+Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The BSI the German Bundesamt für Sicherheit in der Informationstechnik) [[1](#schindler)] recommends a series of statistical tests.
 
 ## References
 

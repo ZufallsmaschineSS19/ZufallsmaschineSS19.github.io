@@ -59,11 +59,11 @@ There are a total of five statistical tests recommended:
 
 ### Monobit Test
 
-We sum up all bits in this binary string. 
+We sum up all bits in this the string $b$.
 
 $$ X_{b} = \sum_{i=1}^{i=20000} b_{i}$$
 
-To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally likely ($50 \%). Therefore we expect the roughly the same number of ones as we have zeros.
+To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally likely ($50 \%$). Therefore we expect the roughly the same number of ones as we have zeros.
 
 ### Poker Test
 

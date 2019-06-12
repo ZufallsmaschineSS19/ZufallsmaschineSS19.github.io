@@ -48,7 +48,11 @@ This appears to be a much better sequence. At first glance we can not spot repea
 
 ## Testing for randomness
 
-Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The BSI the German Bundesamt für Sicherheit in der Informationstechnik) [[1](#schindler)] recommends a series of statistical tests.
+Our third example already makes it hard to tell if these numbers are _good_ pseudo random numbers. But what makes a sequence of pseudo random numbers _good_? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends [[2](#schindler)] a series of statistical tests. These tests look at the binary sequence of the random numbers.
+
+The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be 
+
+$$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, 00110110, 10111110, \dots $$
 
 ## References
 

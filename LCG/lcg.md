@@ -28,7 +28,7 @@
 <h2 id="testing-for-randomness">Testing for randomness</h2>
 <p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The German Bundesamt für Sicherheit in der Informationstechnik (BSI) recommends a series of statistical tests [<a href="#schindler">2</a>]. These tests look at the binary sequence of the random numbers.</p>
 <p>The binary sequence of <a href="#m-251-a-33-c-0-x_0-1">example three</a> would be <span class="math display">\[ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots \]</span></p>
-<p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted $b_{i} (for the <span class="math inline">\(i\)</span>th bit)$.</p>
+<p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted <span class="math inline">\(b_{i}\)</span> (for the <span class="math inline">\(i\)</span>th bit).</p>
 <p>There are a total of five statistical tests recommended:</p>
 <h3 id="monobit-test">Monobit Test</h3>
 <p>We sum up all bits in this binary string. The result has to conform to a distribution.</p>
@@ -40,4 +40,5 @@
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
 <li><a name="schindler">[2]</a> Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf" class="uri">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
+<li><a name="plock">[3]</a> Matthias Plock. <em>lcg_tests. A small analysis suite for linear congruential generators for a university seminar.</em> <a href="https://github.com/Klump3n/lcg_tests" class="uri">https://github.com/Klump3n/lcg_tests</a>, 2019.</li>
 </ul>

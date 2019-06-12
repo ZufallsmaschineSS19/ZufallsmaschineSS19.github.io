@@ -53,7 +53,7 @@ Our third example already makes it hard to tell if these numbers are _good_ pseu
 The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be
 $$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots $$
 
-To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly $20000$ bits long. This binary string is denoted $b$, individual bits are denoted $b_{i} (for the $i$th bit)$.
+To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly $20000$ bits long. This binary string is denoted $b$, individual bits are denoted $b_{i}$ (for the $i$th bit).
 
 There are a total of five statistical tests recommended:
 
@@ -73,3 +73,4 @@ We sum up all bits in this binary string. The result has to conform to a distrib
 
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
  * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf), 1999.
+ * <a name="plock">[3]</a> Matthias Plock. _lcg\_tests. A small analysis suite for linear congruential generators for a university seminar._ [https://github.com/Klump3n/lcg_tests](https://github.com/Klump3n/lcg_tests), 2019.

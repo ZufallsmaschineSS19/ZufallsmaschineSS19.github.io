@@ -73,7 +73,7 @@ $$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots $$
 We can turn each segment into a four bit number between $0$ to $15$. There are exactly $16$ different numbers. We now count the occurrence of each of these numbers, denoted $s_{i}$ with $i \in [0, 15]$. With this in mind we calculate the sum
 $$X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}$$
 
-To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum. This is in essence a Chi-Squared test with 15 degrees of freedom.
+To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum. This is in essence a $\chi^{2}$-test with 15 degrees of freedom.
 
 ### Runs Test
 

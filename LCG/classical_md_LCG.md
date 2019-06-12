@@ -53,9 +53,13 @@ Our third example already makes it hard to tell if these numbers are _good_ pseu
 The binary sequence of [example three](#m-251-a-33-c-0-x_0-1) would be
 $$ 00100001, 01010101, 00101100, 11000101, 11100010, 101100111, 00001101, \dots $$
 
+To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly $20000$ bits long. This binary string is denoted $b$, individual bits are denoted $b_{i} (for the $i$th bit)$.
+
 There are a total of five statistical tests recommended:
 
 ### Monobit Test
+
+We sum up all bits in this binary string. The result has to conform to a distribution.
 
 ### Poker Test
 

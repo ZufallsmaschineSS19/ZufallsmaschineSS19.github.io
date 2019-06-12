@@ -15,7 +15,7 @@
 <p>To get a feeling for this formula we choose a couple of parameters and see what we get for the output.</p>
 <h3 id="m-9-a-2-c-0-x_0-1"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
 <p>These parameters generate the following sequence of numbers:</p>
-<p><span class="math display">\[ 2 4 8 7 5 1 2 4 8 7 5 1 2 4 8 7 5 1 2 4 \dots\]</span></p>
+<p><span class="math display">\[ 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, \dots \]</span></p>
 <h2 id="references">References</h2>
 <ul>
 <li>Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

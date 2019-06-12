@@ -26,7 +26,7 @@
 <p><span class="math display">\[33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots\]</span></p>
 <p>This appears to be a much better sequence. At first glance we can not spot repeating values and we are also unable to predict a successor to some value. The only obvious shortcoming is the small modulus. A modulus of <span class="math inline">\(M = 251\)</span> causes the values to only be in the range <span class="math inline">\(\left( 0, M\right)\)</span>. After <span class="math inline">\(250\)</span> numbers the values will definitely start repeating.</p>
 <h2 id="testing-for-randomness">Testing for randomness</h2>
-<p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The BSI the German Bundesamt für Sicherheit in der Informationstechnik) [<a href="1">schindler</a>] recommends a series of statistical tests.</p>
+<p>Our third example already makes it hard to tell if these numbers are <em>good</em> pseudo random numbers. But what makes a sequence of pseudo random numbers <em>good</em>? The BSI the German Bundesamt für Sicherheit in der Informationstechnik) [<a href="schindler">1</a>] recommends a series of statistical tests.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

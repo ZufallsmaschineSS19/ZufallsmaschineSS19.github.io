@@ -33,7 +33,7 @@
 <h3 id="monobit-test">Monobit Test</h3>
 <p>We sum up all bits in this binary string.</p>
 <p><span class="math display">\[ X_{b} = \sum_{i=1}^{i=20000} b_{i}\]</span></p>
-<p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>.</p>
+<p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally likely ($50 %). Therefore we expect the roughly the same number of ones as we have zeros.</p>
 <h3 id="poker-test">Poker Test</h3>
 <h3 id="runs-test">Runs Test</h3>
 <h3 id="long-runs-test">Long Runs Test</h3>

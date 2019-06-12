@@ -64,12 +64,13 @@ We sum up all bits in this the string $b$.
 
 $$ X_{b} = \sum_{i=1}^{i=20000} b_{i}$$
 
-To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable ($\tfrac{1}{2}$). Therefore we expect the roughly the same number of ones as we have zeros.
+To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable (exactly $0.5$). Therefore we expect the roughly the same number of ones as we have zeros.
 
 ### Poker Test
 
 We divide the binary sequence into segments of four bits each,
-$$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, 0011, 1000, 0110, \dots $$
+$$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots $$
+We can turn each segment into a four bit number between $0$ to $15$. There are exactly $16$ different numbers. We now count the occurence of each of these numbers, denoted $s_{i}$ with $i \in [0, 15]$.
 
 ### Runs Test
 

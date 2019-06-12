@@ -12,4 +12,12 @@
 <p><span class="math display">\[X_{n+1} = A * X_{n} + C \mod M \mathrm{.}\]</span></p>
 <p>Since all values are discrete the result of the linear transformation <span class="math inline">\(R = A * X_{n} + C\)</span> is again a discrete number. Through the modulo operation <span class="math inline">\(X_{n+1} = R \mod M\)</span> we assert <span class="math inline">\(0 \leq X_{n+1} &lt; M\)</span>.</p>
 <h2 id="a-few-examples">A few examples</h2>
-<p>To get a feeling for this formula we choose the parameters and see what we receive.</p>
+<p>To get a feeling for this formula we choose a couple of parameters and see what we get for the output.</p>
+<h3 id="m-9-a-2-c-0-x_0-1"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
+<p>These parameters generate the following sequence of numbers:</p>
+<p><span class="math display">\[ 2 4 8 7 5 1 2 4 8 7 5 1 2 4 8 7 5 1 2 4 \dots\]</span></p>
+<h2 id="references">References</h2>
+<ul>
+<li>Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
+<li>Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
+</ul>

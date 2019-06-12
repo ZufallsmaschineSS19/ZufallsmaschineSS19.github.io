@@ -1,5 +1,4 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 <h1 id="linear-congruential-generators">Linear Congruential Generators</h1>
 <p>Linear Congruential Generators (or LCGs in short) are algorithms that can be used to generate pseudo random numbers. To generate a random number with an LCG we need three discrete parameters and a starting value. The parameters are</p>
 <ul>
@@ -16,6 +15,11 @@
 <h3 id="m-9-a-2-c-0-x_0-1"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
 <p>These parameters generate the following sequence of numbers:</p>
 <p><span class="math display">\[ 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, 8, 7, 5, 1, 2, 4, \dots \]</span></p>
+<p>We can see that it repeats itself very quickly. This is of course due to the small modulus we choose. Furthermore we can see that it does not cover all the values in the interval <span class="math inline">\(\left(0, M\right)\)</span>. If we now choose a starting value that is any number in the sequence above, we will obtain the same sequence again. So let’s choose a value that has not occured yet.</p>
+<h3 id="m-9-a-2-c-0-x_0-3"><span class="math inline">\(M = 9\)</span>, <span class="math inline">\(A = 2\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 3\)</span></h3>
+<p>These parameters generate the following sequence of numbers:</p>
+<p><span class="math display">\[6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, \dots\]</span></p>
+<p>This sequence is even less random, as it only takes on the values <span class="math inline">\(3\)</span> and <span class="math inline">\(6\)</span>. Now we have exhausted all values in <span class="math inline">\(\left(0, M\right)\)</span>.</p>
 <h2 id="references">References</h2>
 <ul>
 <li>Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

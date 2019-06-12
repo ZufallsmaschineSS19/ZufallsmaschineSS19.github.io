@@ -62,7 +62,7 @@ There are a total of five statistical tests recommended:
 
 We sum up all bits in this the string $b$.
 
-$$ X_{b} = \sum_{i=1}^{i=20000} b_{i}$$
+$$ X_{b} = \sum_{i=1}^{i=20000} b_{i}\mathrm{.}$$
 
 To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346$. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable (exactly $0.5$). Therefore we expect the roughly the same number of ones as we have zeros.
 
@@ -71,7 +71,11 @@ To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346
 We divide the binary sequence into segments of four bits each,
 $$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots $$
 We can turn each segment into a four bit number between $0$ to $15$. There are exactly $16$ different numbers. We now count the occurrence of each of these numbers, denoted $s_{i}$ with $i \in [0, 15]$. With this in mind we calculate the sum
-$$X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000$$
+$$X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}$$
+
+To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum. 
+
+TODO: $\chi^{2}$ explanation.
 
 ### Runs Test
 

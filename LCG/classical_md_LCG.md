@@ -36,6 +36,16 @@ $$6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, \dots$$
 
 This sequence is even less random, as it only takes on the values $3$ and $6$. Now we have exhausted all values in $\left(0, M\right)$.
 
+We can already tell that to obtain truly randomly _looking_ numbers, we need to pick a larger modulus.
+
+### $M = 251$, $A = 33$, $C = 0$, $X_{0} = 1$
+
+We obtain
+
+$$33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots$$
+
+This appears to be a much better sequence. At first glance we can not spot repeating values.
+
 ## References
 
  * Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.

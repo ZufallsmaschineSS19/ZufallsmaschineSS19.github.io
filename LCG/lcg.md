@@ -20,6 +20,11 @@
 <p>These parameters generate the following sequence of numbers:</p>
 <p><span class="math display">\[6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, \dots\]</span></p>
 <p>This sequence is even less random, as it only takes on the values <span class="math inline">\(3\)</span> and <span class="math inline">\(6\)</span>. Now we have exhausted all values in <span class="math inline">\(\left(0, M\right)\)</span>.</p>
+<p>We can already tell that to obtain truly randomly <em>looking</em> numbers, we need to pick a larger modulus.</p>
+<h3 id="m-251-a-33-c-0-x_0-1"><span class="math inline">\(M = 251\)</span>, <span class="math inline">\(A = 33\)</span>, <span class="math inline">\(C = 0\)</span>, <span class="math inline">\(X_{0} = 1\)</span></h3>
+<p>We obtain</p>
+<p><span class="math display">\[33, 85, 44, 197, 226, 179, 134, 155, 95, 123, 43, 164, 141, 135, 188, 180, 167, 240, 139, 69, \dots\]</span></p>
+<p>This appears to be a much better sequence. At first glance we can not spot repeating values.</p>
 <h2 id="references">References</h2>
 <ul>
 <li>Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

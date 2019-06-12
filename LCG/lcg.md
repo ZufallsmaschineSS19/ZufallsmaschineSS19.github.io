@@ -36,8 +36,7 @@
 <p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable (exactly <span class="math inline">\(0.5\)</span>). Therefore we expect the roughly the same number of ones as we have zeros.</p>
 <h3 id="poker-test">Poker Test</h3>
 <p>We divide the binary sequence into segments of four bits each, <span class="math display">\[ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots \]</span> We can turn each segment into a four bit number between <span class="math inline">\(0\)</span> to <span class="math inline">\(15\)</span>. There are exactly <span class="math inline">\(16\)</span> different numbers. We now count the occurrence of each of these numbers, denoted <span class="math inline">\(s_{i}\)</span> with <span class="math inline">\(i \in [0, 15]\)</span>. With this in mind we calculate the sum <span class="math display">\[X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}\]</span></p>
-<p>To pass the poker test we expect <span class="math inline">\(1.03 &lt; X_{s} &lt; 57.4\)</span> for the result of the sum.</p>
-<p>TODO: <span class="math inline">\(\chi^{2}\)</span> explanation.</p>
+<p>To pass the poker test we expect <span class="math inline">\(1.03 &lt; X_{s} &lt; 57.4\)</span> for the result of the sum. This is in essence a Chi-Squared test with 15 degrees of freedom.</p>
 <h3 id="runs-test">Runs Test</h3>
 <h3 id="long-runs-test">Long Runs Test</h3>
 <h3 id="autocorrelation-test">Autocorrelation Test</h3>

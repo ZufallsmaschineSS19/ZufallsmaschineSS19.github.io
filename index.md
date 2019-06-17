@@ -10,7 +10,10 @@ Im Gegensatz zu üblichen Lehrveranstaltungen werden in dieser nicht nur
 Forschungsthemen behandelt oder diskutiert, sondern selbstständig der
 gesamte Forschungsprozess durchlaufen. Es werden von den Studierenden eigenständig Forschungsfragen formuliert und Schwerpunkte gesetzt. Es soll sich unter Anleitung der Tutoren (Paul Winter & Richard Kullmann) Literatur selbst gesucht und in Gruppen ein selbst ausgesuchtes Projekt gestaltet und für Dritte aufbereitet werden.
 
-Das Abschlussprojekt des WiSe 2018/19 wurde auf der Langen Nacht der Wissenschaften [(offizielle Website)](https://www.langenachtderwissenschaften.de/) präsentiert. Die präsentierten Poster und ausgelegten Spiele und Experimente kannst du [hier] finden.
+Das Abschlussprojekt des WiSe 2018/19 wurde auf der [Langen Nacht der
+Wissenschaften](https://www.langenachtderwissenschaften.de/)
+präsentiert. Die präsentierten Poster und ausgelegten Spiele und
+Experimente kannst du [hier](projekt_WiSe1819/LNdW.md) finden.
 
 Diese Website soll die Ergebnisse des Tutoriums des SoSe 2019 präsentieren.
 Die Programme und Bilde, sowie der Quellcode für diese

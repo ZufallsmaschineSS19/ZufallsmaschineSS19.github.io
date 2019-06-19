@@ -31,13 +31,48 @@
 <p>To perform the following tests we take all binary numbers and concatenate them into a long string. This string is then truncated to be exactly <span class="math inline">\(20000\)</span> bits long. This binary string is denoted <span class="math inline">\(b\)</span>, individual bits are denoted <span class="math inline">\(b_{i}\)</span> (for the <span class="math inline">\(i\)</span>th bit). <span class="math display">\[ b = 00100001010101010010110011000101111000101011001110000110\dots \]</span></p>
 <p>There are a total of five statistical tests recommended:</p>
 <h3 id="monobit-test">Monobit Test</h3>
-<p>We sum up all bits in this the string <span class="math inline">\(b\)</span>.</p>
+<p>We sum up all bits in the string <span class="math inline">\(b\)</span>.</p>
 <p><span class="math display">\[ X_{b} = \sum_{i=1}^{i=20000} b_{i}\mathrm{.}\]</span></p>
 <p>To pass the monobit test the result <span class="math inline">\(X_{b}\)</span> has to fulfill <span class="math inline">\(9654 &lt; X_{b} &lt; 10346\)</span>. In words: the sequence is binary, made up of ones and zeros. Either appearance is equally probable (exactly <span class="math inline">\(0.5\)</span>). Therefore we expect the roughly the same number of ones as we have zeros.</p>
 <h3 id="poker-test">Poker Test</h3>
 <p>We divide the binary sequence into segments of four bits each, <span class="math display">\[ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots \]</span> We can turn each segment into a four bit number between <span class="math inline">\(0\)</span> to <span class="math inline">\(15\)</span>. There are exactly <span class="math inline">\(16\)</span> different numbers. We now count the occurrence of each of these numbers, denoted <span class="math inline">\(s_{i}\)</span> with <span class="math inline">\(i \in [0, 15]\)</span>. With this in mind we calculate the sum <span class="math display">\[X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}\]</span></p>
 <p>To pass the poker test we expect <span class="math inline">\(1.03 &lt; X_{s} &lt; 57.4\)</span> for the result of the sum. This is in essence a <span class="math inline">\(\chi^{2}\)</span>-test with 15 degrees of freedom.</p>
 <h3 id="runs-test">Runs Test</h3>
+<p>We look at the binary sequence and count sequences of ones and zeros. In the sequence <span class="math display">\[ 1, 0, 0, 1, 1, 1, 0, 1 \]</span> we have three sequences of length 1 (the first <span class="math inline">\(1\)</span> and the <span class="math inline">\(0\)</span> and the <span class="math inline">\(1\)</span> at the end), one sequence of length <span class="math inline">\(2\)</span> (<span class="math inline">\(0, 0\)</span>) and one sequence of length <span class="math inline">\(3\)</span> ($ 1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length <span class="math inline">\(20000\)</span> this distribution is</p>
+<table>
+<thead>
+<tr class="header">
+<th>Sequence length</th>
+<th style="text-align: right;">Occurrence interval</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td style="text-align: right;">2267-2733</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td style="text-align: right;">1079-1421</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td style="text-align: right;">502-748</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td style="text-align: right;">233-402</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td style="text-align: right;">90-223</td>
+</tr>
+<tr class="even">
+<td>6 and more</td>
+<td style="text-align: right;">90-233</td>
+</tr>
+</tbody>
+</table>
 <h3 id="long-runs-test">Long Runs Test</h3>
 <h3 id="autocorrelation-test">Autocorrelation Test</h3>
 <h2 id="references">References</h2>

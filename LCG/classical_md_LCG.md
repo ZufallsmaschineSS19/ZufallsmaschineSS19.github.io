@@ -60,7 +60,7 @@ There are a total of five statistical tests recommended:
 
 ### Monobit Test
 
-We sum up all bits in this the string $b$.
+We sum up all bits in the string $b$.
 
 $$ X_{b} = \sum_{i=1}^{i=20000} b_{i}\mathrm{.}$$
 
@@ -76,6 +76,20 @@ $$X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}$$
 To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum. This is in essence a $\chi^{2}$-test with 15 degrees of freedom.
 
 ### Runs Test
+
+We look at the binary sequence and count sequences of ones and zeros. In the sequence
+$$ 1, 0, 0, 1, 1, 1, 0, 1 $$
+we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at the end), one sequence of length $2$ ($0, 0$) and one sequence of length $3$ ($ 1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length $20000$ this distribution is
+
+| Sequence length | Occurrence interval |
+| --- | ---: |
+| 1 | 2267-2733 |
+| 2 | 1079-1421 |
+| 3 | 502-748 | 
+| 4 | 233-402 |
+| 5 | 90-223 |
+| 6 and more | 90-233 |
+
 
 ### Long Runs Test
 

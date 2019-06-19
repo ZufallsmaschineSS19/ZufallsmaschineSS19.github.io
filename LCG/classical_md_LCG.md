@@ -113,9 +113,9 @@ Then the sum of $b_{0 \oplus 1}$ is calculated. For a totally uncorrelated origi
 
 #### The actual test
 
-For the actual test the sequences are $5000$ bits long. We take the original sequence $b$ and calculate for $n \in [1, 5000]$
+For the actual test the sequences are $5000$ bits long. We take bits $b_{i}$ from the original sequence $b$ and calculate for $n \in [1, 5000]$
 $$X_{n} = \sum_{j=1}^{j=5000} b_{j} \oplus b_{j+n}$$
-The test has passed when $2326 < X_{n} < 2674$ for each $n$.
+The test has passed when $2326 < X_{n} < 2674$ for each $n$. To avoid confusion it should be noted that the test is only performed on the first $10000$ bits of the original sequence.
 
 ## References
 

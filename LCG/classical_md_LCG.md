@@ -136,7 +136,9 @@ Let's generate a random number sequence $X_{n}$ (the parameters for the LCG are 
 What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines.
 We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+1}$. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).
 
-## The Spectral Test
+These lines are determined by our choice of parameters for the LCG. Since the increment $C$ only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier $A$ and the modulus $M$.
+
+The closer the lines are to each other, the higher quality the random numbers are.
 
 # References
 

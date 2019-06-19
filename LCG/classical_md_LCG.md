@@ -129,11 +129,11 @@ In the first image we can see the autocorrelation values of a binary sequence fr
 ## Pitfalls of LCGs
 
 Statistical tests are a good way of assessing some basic distribution properties of (pseudo random) binary sequences. In the case of pseudo random binary sequences generated from LCGs however, they don't necessarily tell the whole story.
-Let's look at the random number sequence $X_{n}$ plotted against the random number sequence $X_{n+1}$ (the same sequence, just shifted to the right by one number).
+Let's generate a random number sequence $X_{n}$ (the parameters for the LCG are $X_{0} = 1$, $A = 33$, $C = 0$ and $M = 251232131$; for these parameters all statistical tests pass) and look at the random number sequence $X_{n}$ plotted against the random number sequence $X_{n+1}$ (the same sequence, just shifted to the right by one number).
 
 ![](spectral_v2_fail.png)
 
-The parameters for the LCG are $X_{0} = 1$, $A = 33$, $C = 0$ and $M = 251232131$. The statistical tests all pass, yet we see this when we simply plot the random numbers againts themself. Clearly our random numbers are not so random after all. 
+Even though the statistical tests all pass, we see this when we simply plot the random numbers againts themself. Clearly our random numbers are not so random after all. 
 
 We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+1}$.
 

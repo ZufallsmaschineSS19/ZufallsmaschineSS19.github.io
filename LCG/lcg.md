@@ -93,6 +93,9 @@
 <p>Statistical tests are a good way of assessing some basic distribution properties of (pseudo random) binary sequences. In the case of pseudo random binary sequences generated from LCGs however, they don’t necessarily tell the whole story. Let’s look at the random number sequence <span class="math inline">\(X_{n}\)</span> plotted against the random number sequence <span class="math inline">\(X_{n+1}\)</span> (the same sequence, just shifted to the right by one number).</p>
 <p><img src="spectral_v2_fail.png" /></p>
 <p>The parameters for the LCG are <span class="math inline">\(X_{0} = 1\)</span>, <span class="math inline">\(A = 33\)</span>, <span class="math inline">\(C = 0\)</span> and <span class="math inline">\(M = 251232131\)</span>. The statistical tests all pass, yet we see this when we simply plot the random numbers againts themself. Clearly our random numbers are not so random after all.</p>
+<p>We can find similar pictures in higher dimensions. For three dimensions we would have to plot <span class="math inline">\(X_{n}\)</span> versus <span class="math inline">\(X_{n+1}\)</span> versus <span class="math inline">\(X_{n+1}\)</span>.</p>
+<p>A methodical way to spot this problem is the Spectral Test.</p>
+<h2 id="the-spectral-test">The Spectral Test</h2>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

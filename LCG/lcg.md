@@ -96,6 +96,8 @@
 <p>These lines are determined by our choice of parameters for the LCG. Since the increment <span class="math inline">\(C\)</span> only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier <span class="math inline">\(A\)</span> and the modulus <span class="math inline">\(M\)</span>.</p>
 <p>The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
 <p>For a detailed explanation please refer to the excellent chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
+<h2 id="performing-the-tests">Performing the tests</h2>
+<p>To perform the tests that were introduced we can use the Python program downloadable <a href="#plock">here [3]</a>.</p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

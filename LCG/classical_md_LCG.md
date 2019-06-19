@@ -142,7 +142,9 @@ The closer the lines are to each other, the higher quality the random numbers ar
 
 For a detailed explanation please refer to the excellent chapter on the Spectral Test in [Knuths book [1] (pp. 89)](#knuth).
 
+## Performing the tests
 
+To perform the tests that were introduced we can use the Python program downloadable [here [3]](#plock).
 
 # References
 

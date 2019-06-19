@@ -79,7 +79,7 @@ To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum
 
 We look at the binary sequence and count sequences of ones and zeros. In the sequence
 $$ 1, 0, 0, 1, 1, 1, 0, 1 $$
-we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at the end), one sequence of length $2$ ($0, 0$) and one sequence of length $3$ ($ 1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length $20000$ this distribution is
+we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at the end), one sequence of length $2$ ($0, 0$) and one sequence of length $3$ ($1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length $20000$ this distribution is as follows.
 
 | Sequence length | Occurrence interval |
 | --- | ---: |
@@ -92,6 +92,8 @@ we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at th
 
 
 ### Long Runs Test
+
+The Long Runs Test is essentially the same as the runs test. In this we just see if there are sequences of length $34$ or longer in the binary sequence. If there are the test has failed.
 
 ### Autocorrelation Test
 

@@ -38,7 +38,7 @@
 <p>We divide the binary sequence into segments of four bits each, <span class="math display">\[ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots \]</span> We can turn each segment into a four bit number between <span class="math inline">\(0\)</span> to <span class="math inline">\(15\)</span>. There are exactly <span class="math inline">\(16\)</span> different numbers. We now count the occurrence of each of these numbers, denoted <span class="math inline">\(s_{i}\)</span> with <span class="math inline">\(i \in [0, 15]\)</span>. With this in mind we calculate the sum <span class="math display">\[X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}\]</span></p>
 <p>To pass the poker test we expect <span class="math inline">\(1.03 &lt; X_{s} &lt; 57.4\)</span> for the result of the sum. This is in essence a <span class="math inline">\(\chi^{2}\)</span>-test with 15 degrees of freedom.</p>
 <h3 id="runs-test">Runs Test</h3>
-<p>We look at the binary sequence and count sequences of ones and zeros. In the sequence <span class="math display">\[ 1, 0, 0, 1, 1, 1, 0, 1 \]</span> we have three sequences of length 1 (the first <span class="math inline">\(1\)</span> and the <span class="math inline">\(0\)</span> and the <span class="math inline">\(1\)</span> at the end), one sequence of length <span class="math inline">\(2\)</span> (<span class="math inline">\(0, 0\)</span>) and one sequence of length <span class="math inline">\(3\)</span> ($ 1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length <span class="math inline">\(20000\)</span> this distribution is</p>
+<p>We look at the binary sequence and count sequences of ones and zeros. In the sequence <span class="math display">\[ 1, 0, 0, 1, 1, 1, 0, 1 \]</span> we have three sequences of length 1 (the first <span class="math inline">\(1\)</span> and the <span class="math inline">\(0\)</span> and the <span class="math inline">\(1\)</span> at the end), one sequence of length <span class="math inline">\(2\)</span> (<span class="math inline">\(0, 0\)</span>) and one sequence of length <span class="math inline">\(3\)</span> (<span class="math inline">\(1, 1, 1\)</span>). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length <span class="math inline">\(20000\)</span> this distribution is as follows.</p>
 <table>
 <thead>
 <tr class="header">
@@ -74,6 +74,7 @@
 </tbody>
 </table>
 <h3 id="long-runs-test">Long Runs Test</h3>
+<p>The Long Runs Test is essentially the same as the runs test. In this we just see if there are sequences of length <span class="math inline">\(34\)</span> or longer in the binary sequence. If there are the test has failed.</p>
 <h3 id="autocorrelation-test">Autocorrelation Test</h3>
 <h2 id="references">References</h2>
 <ul>

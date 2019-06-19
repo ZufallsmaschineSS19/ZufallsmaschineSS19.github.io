@@ -131,6 +131,7 @@ In the first image we can see the autocorrelation values of a binary sequence fr
 Statistical tests are a good way of assessing some basic distribution properties of (pseudo random) binary sequences. In the case of pseudo random binary sequences generated from LCGs however, they don't necessarily tell the whole story.
 Let's look at a plot of the numbers generated from an LCG, plotted against them self.
 
+![](spectral_v2_fail.png)
 
 # References
 

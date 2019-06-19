@@ -102,17 +102,20 @@ The Autocorrelation Test tests sub sequences of the original binary sequence and
 
 Let's take the sequence
 $$ b = 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, \dots $$
-and create from it two sub sequences of length $10$. We let $b_{i}$ be the sub sequence of length $10$ that was created by removing the _first_ $i$ bits from the sequence $b$ and then removing everything that makes $b_{i}$ longer than length $10$.
-$$b_{0} = 0, 0, 1, 0, 0, 0, 0, 1, 0, 1$$
-$$b_{1} = 0, 1, 0, 0, 0, 0, 1, 0, 1, 0$$
+and create from it two sub sequences of length $10$. We let $s_{i}$ be the sub sequence of length $10$ that was created by removing the _first_ $i$ bits from the sequence $b$ and then removing everything that makes $s_{i}$ longer than length $10$.
+$$s_{0} = 0, 0, 1, 0, 0, 0, 0, 1, 0, 1$$
+$$s_{1} = 0, 1, 0, 0, 0, 0, 1, 0, 1, 0$$
 The next step is to perform a bitwise XOR operation on the two sequences,
-$$b_{0 \oplus 1} = b_{0} \oplus b_{1} = 1, 0, 0, 1, 1, 1, 0, 0, 0, 0$$
+$$s_{0 \oplus 1} = s_{0} \oplus s_{1} = 1, 0, 0, 1, 1, 1, 0, 0, 0, 0$$
 XOR is a logic operation with the following logic table
 $$0 \oplus 0 = 0\mathrm{,} \quad 0 \oplus 1 = 1\mathrm{,} \quad 1 \oplus 0 = 1\mathrm{,} \quad 1 \oplus 1 = 0$$
+Then the sum of $b_{0 \oplus 1}$ is calculated. For a totally uncorrelated original binary sequence we expect a value of roughly $5$ (half the length of the sub sequences).
 
 #### The actual test
 
-For the actual test the sequences are $5000$ bits long.
+For the actual test the sequences are $5000$ bits long. We take the original sequence $b$ and calculate for $n \in [1, 5000]$
+$$X_{n} = \sum_{j=1}^{j=5000} b_{j} \oplus b_{j+n}$$
+The test has passed when $2326 < X_{n} < 2674$ for each $n$.
 
 ## References
 

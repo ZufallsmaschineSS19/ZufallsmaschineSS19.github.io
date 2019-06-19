@@ -70,7 +70,7 @@ To pass the monobit test the result $X_{b}$ has to fulfill $9654 < X_{b} < 10346
 
 We divide the binary sequence into segments of four bits each,
 $$ 0010, 0001, 0101, 0101, 0010, 1100, 1100, 0101, 1110, 0010, 1011, \dots $$
-We can turn each segment into a four bit number between $0$ to $15$. There are exactly $16$ different numbers. We now count the occurrence of each of these numbers, denoted $s_{i}$ with $i \in [0, 15]$. With this in mind we calculate the sum
+We can turn each segment into a four bit number between $0$ to $15$. There are exactly $16$ different numbers. We now count the occurrence of each of these numbers, denoted $s_{i}$ with $i \in [0, 15]$. With this we calculate the sum
 $$X_{s} = \sum_{i=0}^{i=15} s_{i}^{2} - 5000\mathrm{.}$$
 
 To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum. This is in essence a $\chi^{2}$-test with 15 degrees of freedom.
@@ -79,7 +79,7 @@ To pass the poker test we expect $1.03 < X_{s} < 57.4$ for the result of the sum
 
 We look at the binary sequence and count sequences of ones and zeros. In the sequence
 $$ 1, 0, 0, 1, 1, 1, 0, 1 $$
-we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at the end), one sequence of length $2$ ($0, 0$) and one sequence of length $3$ ($1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length $20000$ this distribution is as follows.
+we have three sequences of length $1$ (the first $1$ and the $0$ and the $1$ at the end), one sequence of length $2$ ($0, 0$) and one sequence of length $3$ ($1, 1, 1$). The occurrences of each length has to follow a distribution if the sequence is truly random. For a sequence of length $20000$ this distribution is as follows.
 
 | Sequence length | Occurrence interval |
 | --- | ---: |
@@ -90,12 +90,18 @@ we have three sequences of length 1 (the first $1$ and the $0$ and the $1$ at th
 | 5 | 90-223 |
 | 6 and more | 90-233 |
 
-
 ### Long Runs Test
 
 The Long Runs Test is essentially the same as the runs test. In this we just see if there are sequences of length $34$ or longer in the binary sequence. If there are the test has failed.
 
 ### Autocorrelation Test
+
+The Autocorrelation Test tests sub sequences of the original binary sequence and looks how much they depend on each other (or how "similar" they are). Let's take the sequence
+$$ b = 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, \dots $$
+and create from it two sub sequences of length $10$. We let $b_{i}$ be the sub sequence of length $10$ that was created by removing the _first_ $i$ bits from the sequence $b$ and then removing everything that makes $b_{i}$ longer than length $10$.
+$$b_{0} = 0, 0, 1, 0, 0, 0, 0, 1, 0, 1$$
+$$b_{1} =    0, 1, 0, 0, 0, 0, 1, 0, 1, 0$$
+
 
 ## References
 

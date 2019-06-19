@@ -117,6 +117,15 @@ For the actual test the sequences are $5000$ bits long. We take bits $b_{i}$ fro
 $$X_{n} = \sum_{j=1}^{j=5000} b_{j} \oplus b_{j+n}$$
 The test has passed when $2326 < X_{n} < 2674$ for each $n$. To avoid confusion it should be noted that the test is only performed on the first $10000$ bits of the original sequence.
 
+#### Example plots
+
+![The modulus of the LCG was choosen to be very small. The result is strong autocorrelation.](short_ac.png)
+
+![Autocorrelation of truly random numbers](truly_random.png)
+
+
+
+
 ## References
 
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.

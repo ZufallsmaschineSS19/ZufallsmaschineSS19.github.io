@@ -140,7 +140,7 @@ These lines are determined by our choice of parameters for the LCG. Since the in
 
 The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).
 
-For a detailed explanation please refer to the excellent chapter on the Spectral Test in [Knuths book (pp. 89)](#knuth).
+For a detailed explanation please refer to the excellent chapter on the Spectral Test in [Knuths book [1] (pp. 89)](#knuth).
 
 
 

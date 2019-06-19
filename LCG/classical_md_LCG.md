@@ -144,7 +144,7 @@ For a detailed explanation please refer to the excellent chapter on the Spectral
 
 ## Performing the tests
 
-To perform the tests that were introduced we can use the Python program downloadable [here [3]](#plock).
+To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock).
 
 # References
 

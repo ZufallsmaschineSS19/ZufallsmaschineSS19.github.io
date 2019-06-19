@@ -97,7 +97,7 @@
 <p>The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
 <p>For a detailed explanation please refer to the excellent chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
-<p>To perform the tests that were introduced we can use the Python program downloadable <a href="#plock">here [3]</a>.</p>
+<p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>.</p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

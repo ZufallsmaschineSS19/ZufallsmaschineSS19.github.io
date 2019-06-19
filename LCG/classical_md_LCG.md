@@ -138,7 +138,11 @@ We can find similar pictures in higher dimensions. For three dimensions we would
 
 These lines are determined by our choice of parameters for the LCG. Since the increment $C$ only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier $A$ and the modulus $M$.
 
-The closer the lines are to each other, the higher quality the random numbers are.
+The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).
+
+For a detailed explanation please refer to the excellent chapter on the Spectral Test in [Knuths book (pp. 89)](#knuth).
+
+
 
 # References
 

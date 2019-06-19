@@ -92,9 +92,7 @@
 <h2 id="pitfalls-of-lcgs-the-spectral-test">Pitfalls of LCGs – The Spectral Test</h2>
 <p>Statistical tests are a good way of assessing some basic distribution properties of (pseudo random) binary sequences. In the case of pseudo random binary sequences generated from LCGs however, they don’t necessarily tell the whole story. Let’s generate a random number sequence <span class="math inline">\(X_{n}\)</span> (the parameters for the LCG are <span class="math inline">\(X_{0} = 1\)</span>, <span class="math inline">\(A = 33\)</span>, <span class="math inline">\(C = 0\)</span> and <span class="math inline">\(M = 251232131\)</span>; for these parameters all statistical tests pass) and look at the random number sequence <span class="math inline">\(X_{n}\)</span> plotted against the random number sequence <span class="math inline">\(X_{n+1}\)</span> (the same sequence, just shifted to the right by one number).</p>
 <p><img src="spectral_v2_fail.png" /></p>
-<p>Even though the statistical tests all pass, we see this when we simply plot the random numbers againts themself. Clearly our random numbers are not so random after all.</p>
-<p>We can find similar pictures in higher dimensions. For three dimensions we would have to plot <span class="math inline">\(X_{n}\)</span> versus <span class="math inline">\(X_{n+1}\)</span> versus <span class="math inline">\(X_{n+1}\)</span>.</p>
-<p>A methodical way to spot this problem is the Spectral Test.</p>
+<p>What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines. We can find similar pictures in higher dimensions. For three dimensions we would have to plot <span class="math inline">\(X_{n}\)</span> versus <span class="math inline">\(X_{n+1}\)</span> versus <span class="math inline">\(X_{n+1}\)</span>. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).</p>
 <h2 id="the-spectral-test">The Spectral Test</h2>
 <h1 id="references">References</h1>
 <ul>

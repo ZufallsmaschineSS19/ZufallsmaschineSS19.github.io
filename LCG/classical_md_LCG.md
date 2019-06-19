@@ -133,11 +133,8 @@ Let's generate a random number sequence $X_{n}$ (the parameters for the LCG are 
 
 ![](spectral_v2_fail.png)
 
-Even though the statistical tests all pass, we see this when we simply plot the random numbers againts themself. Clearly our random numbers are not so random after all. 
-
-We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+1}$.
-
-A methodical way to spot this problem is the Spectral Test.
+What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines.
+We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+1}$. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).
 
 ## The Spectral Test
 

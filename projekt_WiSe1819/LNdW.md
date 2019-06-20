@@ -21,7 +21,11 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 [Poster der Anwendungs-Gruppe](Poster_Anwendung.pdf)
 
-===
+---
+
+### Das Trippel-Pendel alias "Chaos-Pendel"
+
+![Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
 
 ### Mitmachspiele
 
@@ -33,27 +37,28 @@ Berechne mithilfe der Monte-Carlo-Integration und experimentell erzeugten Zufall
 
 ---
 
-[OTP-Anleitung]
+[OTP-Anleitung](spiele/OTP_Anleitung.pdf)
 
-[OTP-Musterzettel]
-
----
-
-[Caesar-Spiel]
-
-[Lösung des Caesar-Rätsels]
+[OTP-Musterzettel](spiele/OTP_Hilfszettel)
 
 ---
 
-[Würfelstatistik-Anleitung]
+[Caesar-Raetsel](spiele/Caesar_Raetsel.pdf)
 
-[Strichlisten-Blatt]
+[Lösung des Caesar-Raetsels](spiele/Ceasar_Loesung.pdf)
 
 ---
 
-[Poster über Korrelationen und Scheinkorrelationen]
+[Würfelstatistik-Anleitung](spiele/Wuerfelstatistik_Anleitung.pdf)
 
-[Korrelationsquiz]
+[Strichlisten-Blatt](spiele/Wuerfelstatistik_Hilfszettel.pdf)
+
+---
+
+[Poster über Korrelationen und
+Scheinkorrelationen](Poster_Korrelation.pdf)
+
+[Korrelationsquiz] - comming soon
 
 ---
 

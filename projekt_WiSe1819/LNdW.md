@@ -46,7 +46,7 @@ Schlüssel zu finden der den ganzen Satz wieder lesbar macht:
 
 [Caesar-Raetsel](spiele/Caesar_Raetsel.pdf)
 
-[Lösung des Caesar-Raetsels](spiele/Ceasar_Loesung.pdf)
+[Lösung des Caesar-Raetsels](spiele/Caesar_Loesung.pdf)
 
 ---
 Erstelle eine mathematisch 100% sicher-verschlüsselte Nachricht und

@@ -46,7 +46,7 @@ Das Ziel ist, dass das Neuronale Netzwerk, was im Prinzip nur eine komplizierte 
 Um nun bessere Vorhersagen zu treffen, wird mithilfe eines 
 
 
-
+...überarbeiten...
 
 
 

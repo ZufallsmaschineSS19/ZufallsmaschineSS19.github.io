@@ -45,9 +45,8 @@ Diese Paare von Inputs und Outputs werden auch Trainings-Set oder Trainings-Date
 Das Ziel ist, dass das Neuronale Netzwerk, was im Prinzip nur eine komplizierte nichtlineare Funktion mit sehr vielen Parametern ist, die bekannten Inputs auf die zugehörigen Ouputs abbildet. Als Maß für die Güte der Vorhersage des Netwerks auf den Trainingsdaten wird eine [Kostenfunktion](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html) verwendet, die im einfachsten Fall die Differenz zwischen dem Input und Output-label berechnet und dann quadriert.
 Um nun bessere Vorhersagen zu treffen, werden mithilfe eines [Optimierungsalgorithmus](https://towardsdatascience.com/types-of-optimization-algorithms-used-in-neural-networks-and-ways-to-optimize-gradient-95ae5d39529f) die Parameter des Netzerks so optimiert, dass die Kostenfunktion minimiert wird. Für die meisten Optimierungsalgorithmen werden die Gradienten benötigt, hierzu wird der [Rückpropagations-Algorithmus](http://neuralnetworksanddeeplearning.com/chap2.html) genutzt. Der Optimierungsalgorithmus benötigt mehrere Iterationen über das Trainingsset (Epochen), um sich immer Näher dem Minimum der Kostenfunktion, welche von den Netzwerk-Parametern und den Trainingsdaten abhängt, zu nähern. Eine Veranschaulichung des häufig genutzten Optimierungsverfahrens ['Gradient-Descent'](https://towardsdatascience.com/gradient-descent-algorithm-and-its-variants-10f652806a3) ist in der folgenden Abbildung zu sehen.
 
-
-https://towardsdatascience.com/gradient-descent-algorithm-and-its-variants-10f652806a3
-
+![Gradient descent illustration.png](../pascal/Gradient descent illustration.png)
+[Bild Quelle](https://towardsdatascience.com/gradient-descent-algorithm-and-its-variants-10f652806a3)
 
 Bei dem Fitten eines bekannten Zusammenhangs zu Messdaten eines Experimentes zur Bestimmung von physikalischen oder chemischen Eigenschaften passiert im Prinzip genau das selbe, nur das die Funktionen in der Regel weitaus weniger Parameter aufweisen.
 

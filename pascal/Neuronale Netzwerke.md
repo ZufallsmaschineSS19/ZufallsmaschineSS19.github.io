@@ -1,7 +1,20 @@
 # Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken
 
 ## Einleitung
-Wie zuvor bereits erklärt wurde, haben Zufallszahlen viele Anwendungsbereiche, besonders in der Cryptographie, beim Glücksspiel 
+In diesem Q-Tutorium sollte sich mit Zufallszahlen beschäftigt werden. Nun stellt sich die Fragen: was sind Zufallszahlen? Wie lassen sie sich einteilen? Wie werden sie erzugt? und wie lässt sich ihre Güte überprüfen?
+
+Hier nun ein kurzer Überblick wie sich Zufallszahlen (random numbers-RN) Einordnen lassen und wie sie erzeugt werden können.
+Grob lassen sich RN in 'echte'-Zufallszahlen (true random numbers-TRN) und 'pseudo'-Zufallszahlen (pseudo random numbers-PRN) einteilen. Diese werden über ihre jeweilige Erzeugung mithilfe des genutzten Zufallszahlen-Generators (random number generator-RNG) Unterschieden.
+RNG's lassen sich grob in zwei Kategorien einteilen. Zum einen gibt es die algorithmischen Pseudo RNG's (PRNG's) und zum anderen physikalische- True RNG's (TRNG's).
+Kurz gesagt handelt es sich bei PRNG's um einen Algorithmus bzw. eine mathematische Formel die eine deterministische, periodische Sequenz von Zahlen erzeugt, die die Eigenschaften einer zufälligen Zahlenfolge approximiert, welche jedoch vollkommen durch einen zu Beginn festgelegten Zustand, der auch Seed genannt wird, bestimmt ist.
+Diese strikt deterministischen Generatoren sind per Definition nicht 'echt' Zufällig, da keine Informationsmenge vollkommen Zufällig sein kann, wenn sie durch eine kürzere genau bestimmt wird. Eine echte Zufallszahl sollte selbst bei Kenntnis aller Details über den Generator immer noch vollkommen unvorhersagbare Bits erzeugen. Es zählen allerdings auch Systeme als TRNG's wenn sie zwar theoretisch unter Kenntnis aller Bedingungen Berechenbar sind, diese allerdings aufgrund ihrer Komplexität heutzutage noch nicht vorhersagbar sind.
+Es gibt eine große Anzahl an Algorithmen, wobei deren Periodizität leicht erhöht werden kann, indem ein längerer Seed mit n Bits gewählt wird, der im besten Fall zu einer Periodizität von 2^n führen kann.
+Trotz ihrer nicht wirklichen Zufälligkeit, welche sich in starken langreichweitigen Korrelationen äußert, sind PRNG's wichtig aufgrund ihrer leichten, billigen und schnellen Erzeugung, sowie ihrer Reproduzierbarkeit und perfekter Balance zwischen Nullen und Einsen.
+
+Im Gegensatz zu den PRNG's stehen die durch vollkommen nichtdeterministische physikalische Prozesse erzeugten TRNG's. Diese sind aufgrund ihrer echten Unvorhersehbarkeit besser für Kryptographie geeignet. Dabei werden verschiedene physikalische Prozesse genutzt, um Zufallszahlen zu erzeugen. Einige davon sind: Radioaktiver Zerfall, Zener Rauschen, Johnson Rauschen, Photonen Pfad Teilung mithilfe von Strahlteilern oder Photonen Ankunftszeiten. Alle diese haben gemein, dass es sich um generelle stochastische Prozesse handelt deren Komplexität es unmöglich macht sie genau vorherzusagen.
+TRNG's lassen sich grob in 4 Kategorien Einteilen: auf Rauschen basierenden RNG's, frei laufenden Oszillatoren, auf Chaos basierenden RNG's und Quanten RNG's. 
+
+Zufallszahlen haben viele Anwendungsbereiche, besonders in der Cryptographie, beim Glücksspiel 
 oder bei Simulationen. Die Überprüfung der Güte solcher Zufallszahlen ist deshalb eine wichtige aber auch schwierige Aufgabe. 
 Hierzu gibt es bereits viele Tests, welche jeweils einzelne Eigenschaften von Zufallszahlen überprüfen, jedoch für sich allein selten eine Aussage über die Güte der Zufallszahlen geben.
 So kann eine Zahlenfolge einen Test bestehen, jedoch in vielen anderen Durchfallen oder bei Untersuchung von Teilstücken einer
@@ -10,8 +23,8 @@ Folge vorliegt. Wirklicher Zufall allerdings kann nur bei einer unendlich langen
 
 Eine völlig andere Idee als bei herkömmlichen Tests, in denen jeweils Gewisse Kriterien überprüft werden, ist die Nutzung von 
 Maschinellem Lernen (machine-learning). Dabei sind besonders Neuronale Netzwerke weit verbreitet und erbringen erstaunliche 
-Ergebnisse in vielen Bereichen. Die Idee ist also, ein Neuronales Netzwerk zu nutzen um Pseudo ('pseudo random numbers'-PRN),- 
-aber auch Echte Zufallszahlen ('true random numbers'-TRN) zu überprüfen und gegebenfalls versteckte Korrelationen zwischen den Daten aufzudecken. 
+Ergebnisse in vielen Bereichen. Die Idee ist also, ein Neuronales Netzwerk zu nutzen um Pseudo,- 
+aber auch Echte Zufallszahlen zu überprüfen und gegebenfalls versteckte Korrelationen zwischen den Daten aufzudecken. 
 So soll deren Güte aufgrund der Vorhersagbarkeit der Zahlenfolgen (welche im Falle von binären Bitfolgen natürlich 
 eigentlich bei 50% liegen sollte) überprüft werden.
 

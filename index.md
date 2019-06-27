@@ -30,7 +30,7 @@ zu finden.
 
 ### Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken:
 
-[Zufälligkeit von Pi](pascal/pi_test_nn.md)
+[Zufälligkeit von Pi](ML_approach/pi_test_with_nn.md)
 
 ### Sarahs Projekt:
 

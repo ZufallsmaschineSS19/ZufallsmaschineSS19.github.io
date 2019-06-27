@@ -116,7 +116,11 @@ Ein weiteres interessantes Verhalten ist die scheinbare Abnahme der Rate an rich
 
 
 #### Nutzung von mehr Ebenen, Neuronen sowie mehr Inputs und Trainingsbeispielen
-Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen sollten. Zudem werden aufgrund der erhöhten Komplexität des Models nun mehr Trainingsbeispiele genutzt. Weiterhin wird nun beim Training das Trainings-Set in ein tatsächliches Trainings-Set und ein 'Vergleichs-Set' aufgeteilt, was genutzt werden soll, um Über-fitten zu erkennen. Im Fall von über-fitten sollte der Anteil von richtigen Vorhersagen auf dem verlgeichs-Set wieder sinken. Ab diesem Punkt wird das Training beendet und das beste Netzwerk aller Epochen auf dem Vergleichs-Set zum Test auf einem Test-Set verwendet.
+Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen sollten. Zudem werden aufgrund der erhöhten Komplexität des Models nun mehr Trainingsbeispiele genutzt (1,000,000). Weiterhin wird nun beim Training das Trainings-Set in ein tatsächliches Trainings-Set (erste 800,000) und ein 'Vergleichs-Set' (800,000 bis 1,000,000) aufgeteilt, was genutzt werden soll, um Über-fitten zu erkennen. Im Fall von über-fitten sollte der Anteil von richtigen Vorhersagen auf dem verlgeichs-Set wieder sinken. Im weiteren wurde das selbe Netzwerk wie im letzten test, jedoch mit 100 Digits als Inputs genutzt ([100,32,64,124,248,248,124,64,32,16,2]). Weiterhin wurde 100 Epochen trainiert und die Performance auf dem Training und Vergleichs-Set aufgenommen. Als Test-Sets wurden jeweils Sets aus einer millionen Digits von 0 bis zur 25 millionsten Nachkommastelle verwendet. Set 1 beschreibt also die Digits 1 million bis 2 millionen.
+Das Netzwerk wurde dieses mal nur 4 mal von grundauf neu Trainiert, da nur eine Epoche knapp 5 Sekunden benötigte. Die Ergebnisse sind in den folgenden Plots zu sehen.
+
+
+Das beste Netzwerk erreichte sogar eine Rate von mehr als 57% auf dem reinen Test-Set der ersten 800,000 Digits. Au
 
 #### Nutzung eines einfachen 'Recurrent'-Netzwerks
 

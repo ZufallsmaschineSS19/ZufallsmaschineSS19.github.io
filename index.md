@@ -28,9 +28,9 @@ zu finden.
 
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
-### Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken:
+### Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken:
 
-[Pascals Projekt](pascal/Neuronale Netzwerke.md)
+[Zufälligkeit von Pi](pascal/pi_test_nn.md)
 
 ### Sarahs Projekt:
 

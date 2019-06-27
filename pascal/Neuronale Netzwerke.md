@@ -123,7 +123,8 @@ Das Netzwerk wurde dieses mal nur 3 mal von grundauf neu Trainiert, da nur eine 
 ![test_run2](../pascal/test_run2.png)
 ![test_run3](../pascal/test_run3.png)
 
-Das beste Netzwerk erreichte sogar eine Rate von mehr als 57% auf dem reinen Test-Set der ersten 800,000 Digits. Au
+Das beste Netzwerk erreichte sogar eine Rate von mehr als 56% auf dem reinen Test-Set der ersten 800,000 Digits, jedoch ist auf allen weiteren Testsets der extrem schnelle Abfall der Rate erkennbar. Zudem wird in diesem Plots erkennbar das auch die Schwankungen sehr gleichverteilt wirken. Es ergibt sich jedoch auch, dass je höher die Rate auf dem Trainingsset desto höher die Rate auf dem Testset (auch wenn die Unterschiede minimal sind und es sich bei 3 Tests zufällig so ergeben haben könnte). Demnach könnte man davon ausgehen, dass das Netzwerk trotz des überfittens immernoch etwas mehr Korrelationen erkennt. Wenn man sich die Entwicklung des Kostenfunktion eines Netzwerks auf dem Trainings und Vergleichsset während des Trainings betrachtet wird das überfitten besonders sichtbar.
+![loss_evolution](../pascal/loss_evolution.png)
 
 #### Nutzung eines einfachen 'Recurrent'-Netzwerks
 

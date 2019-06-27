@@ -1,4 +1,4 @@
-# Untersuchung von Pseudo,- und Echten Zufallszahlen mithilfe von Neuronalen Netzwerken
+# Untersuchung der Zufälligkeit von π mithilfe von Neuronalen Netzwerken
 
 ## Einleitung
 In diesem Q-Tutorium sollte sich mit Zufallszahlen beschäftigt werden. Nun stellt sich die Fragen: was sind Zufallszahlen? Wie lassen sie sich einteilen? Wie werden sie erzugt? und wie lässt sich ihre Güte überprüfen?
@@ -123,13 +123,17 @@ Das Netzwerk wurde dieses mal nur 3 mal von grundauf neu Trainiert, da nur eine 
 ![test_run2](../pascal/test_run2.png)
 ![test_run3](../pascal/test_run3.png)
 
-Das beste Netzwerk erreichte sogar eine Rate von mehr als 56% auf dem reinen Test-Set der ersten 800,000 Digits, jedoch ist auf allen weiteren Testsets der extrem schnelle Abfall der Rate erkennbar. Zudem wird in diesem Plots erkennbar das auch die Schwankungen sehr gleichverteilt wirken. Es ergibt sich jedoch auch, dass je höher die Rate auf dem Trainingsset desto höher die Rate auf dem Testset (auch wenn die Unterschiede minimal sind und es sich bei 3 Tests zufällig so ergeben haben könnte). Demnach könnte man davon ausgehen, dass das Netzwerk trotz des überfittens immernoch etwas mehr Korrelationen erkennt. Wenn man sich die Entwicklung des Kostenfunktion eines Netzwerks auf dem Trainings und Vergleichsset während des Trainings betrachtet wird das überfitten besonders sichtbar.
+Das beste Netzwerk erreichte sogar eine Rate von mehr als 56% auf dem reinen Test-Set der ersten 800,000 Digits, jedoch ist auf allen weiteren Testsets der extrem schnelle Abfall der Rate erkennbar. Zudem wird in diesem Plots erkennbar das auch die Schwankungen sehr gleichverteilt wirken. Es ergibt sich jedoch auch, dass je höher die Rate auf dem Trainingsset desto höher die Rate auf dem Testset (auch wenn die Unterschiede minimal sind und es sich bei 3 Tests zufällig so ergeben haben könnte). Demnach könnte man davon ausgehen, dass das Netzwerk trotz des überfittens immernoch etwas mehr Korrelationen erkannt werden. Wenn man sich die Entwicklung des Kostenfunktion eines Netzwerks auf dem Trainings und Vergleichsset während des Trainings betrachtet wird das überfitten besonders sichtbar.
 ![loss_evolution](../pascal/loss_evolution.png)
 
-#### Nutzung eines einfachen 'Recurrent'-Netzwerks
 
 
 ## Zusammenfassung der Ergebnisse sowie kurze Diskussion
+Im Allgemeinen ergeben sich auf den Testsets in dem letzten Test um ca. eine Größenordnung geringere Abweichungen zu 50% als in den Test zuvor. Dies könnte an der fast doppelt so großen Anzahl an Test-Digits liegen. Es wirkt als würde sich der Mittelwert der Vorhersagen immer weiter 50% annähern je mehr Digits zum Testen genutzt werden. Dies legt die Vermutung nahe, dass es sich ebend doch um reinen Zufall handelt, denn dieser kann desto  besser überprüft werden, desto längere Zahlenfolgen gestet werden. Dafür spricht auch die relative Gleichverteilung der richtigen vorhersagen. Dem entgegen spricht allerdings, dass die Rate der Vorhersagen nahe am Trainingsset doch deutlich größer als 50% (Im Vergleich zu den anderen Abweichungen) ist und das Netzwerk eventuell nur einen Zusammenhang für einen bestimmten Bereich von Digits erkannt hat. Deshalb würden die Vorhersagen schlechter werden, je weiter weg die Digits gewählt werden, da der eventuell gelernte Zusamenhang immer weniger Einfluss hat oder nicht genau genug erkannt wurde.
 
+Zusammenfassend lässt sich also sagen, dass die Vermutung zu Beginn, dass mithilfe eines größeren Netzwerkes weitaus höhere Raten auf dem Trainingsset erreicht werden können zutrifft. Zudem konnten die Ergebnisse der Arbeit reproduziert und mit weiteren Tests sogar bestätigt werden.
+
+<!--- ### Nutzung eines einfachen 'Recurrent'-Netzwerks-->
 
 ## Ideen für weiterführende Tests
+Die Idee des Tests von Zufallsfolgen mithilfe von machine learning könnte auf andere, besonders Pseudo Zufallszahlen, ausgeweitet werden. In diesen muss es einen Zusammenhang geben der von dem Netzwerk erkannt werden könnte und theoretisch auch sollte. Weiterhin könnten passendere Netzwerk Strukturen für sequenzielle Daten wie recurrent-networks genutzt werden, die eventuell bessere Vorhersagen treffen könnten.

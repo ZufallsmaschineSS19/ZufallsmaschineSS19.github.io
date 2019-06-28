@@ -25,8 +25,7 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 ### Das Trippel-Pendel alias *"Chaos-Pendel"*
 
-[Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4) -- comming
-soon
+[Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
 
 ### Mitmachspiele
 
@@ -49,6 +48,7 @@ Schlüssel zu finden der den ganzen Satz wieder lesbar macht:
 [Lösung des Caesar-Raetsels](spiele/Caesar_Loesung.pdf)
 
 ---
+
 Erstelle eine mathematisch 100% sicher-verschlüsselte Nachricht und
 schlage der NSA ein Schnippchen. Das **One-Time-Pad**, kurz **OTP**, ist
 ein mächtiges Werkzeug und wurde auch schon im Kalten-Krieg von einer
@@ -58,7 +58,11 @@ viel Zahl von Spionen genutzt.
 
 [OTP-Musterzettel](spiele/OTP_Hilfszettel.pdf)
 
-[Bilder von historischen OTPs] -- comming soon
+[historisches OTP](OTP_Spion.jpg)
+
+[OPT als Lochband](OTP_Lochband.jpg)
+
+[OTP-Fernschreiber](OTP_Fernschreiber.jpg)
 
 ---
 

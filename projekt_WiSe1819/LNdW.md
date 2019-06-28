@@ -25,7 +25,7 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 ### Das Trippel-Pendel alias *"Chaos-Pendel"*
 
-[Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
+![Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
 
 ### Mitmachspiele
 
@@ -58,11 +58,11 @@ viel Zahl von Spionen genutzt.
 
 [OTP-Musterzettel](spiele/OTP_Hilfszettel.pdf)
 
-[historisches OTP](OTP_Spion.jpg)
+![Historisches OTP](OTP_Spion.jpg)
 
-[OPT als Lochband](OTP_Lochband.jpg)
+![OPT als Lochband](OTP_Lochband.jpg)
 
-[OTP-Fernschreiber](OTP_Fernschreiber.jpg)
+![OTP-Fernschreiber](OTP_Fernschreiber.jpg)
 
 ---
 

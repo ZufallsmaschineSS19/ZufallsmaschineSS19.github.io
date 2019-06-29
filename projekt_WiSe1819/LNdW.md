@@ -1,3 +1,7 @@
+
+![Unbenanntes Werk](./../Unbenanntes_Werk.jpg)
+
+
 ## Lange Nacht der Wissenschaften 2019
 
 Zur Langen Nacht der Wissenschaften 2019 wurde unter dem

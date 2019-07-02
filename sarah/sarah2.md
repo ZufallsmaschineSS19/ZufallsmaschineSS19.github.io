@@ -18,9 +18,9 @@ Aus der Ferne betrachtet scheint es manchmal so, als ob im Universum viele Dinge
 ### <center><span style="color:rgb(95,67,37)">Ist das Universum zufällig?</span></center>
 Was bedeutet eigentlich Zufall? Eine häufige Definition von Zufall ist ein Ereignis, oder das Zusammenwirken vieler einzelner Ereignisse, für das man keine kausale Erklärung finden kann.[3] Florian Aigner sagte dazu:
 
-
-<center>_“Ob wir etwas als zufällig betrachten, oder nicht, hängt davon ab, welche Informationen uns zur Verfügung stehen.“_</center>
-
+<blockquote>
+<p>“Ob wir etwas als zufällig betrachten, oder nicht, hängt davon ab, welche Informationen uns zur Verfügung stehen.“</p>
+</blockquote>
 
 Die Wahrnehmung von Zufall bedingt der grundlegenden Fähigkeit der Wahrscheinlichkeits-einschätzung.[3][4] Je weniger Informationen uns also zur Verfügung stehen, desto wahrscheinlicher werden wir ein Ereignis als zufällig einstufen. Von dieser Überlegung ausgehend können wir uns nun dem Zufall in der Quantenphysik zuwenden. Als promovierter Quantenphysiker versucht Florian Aigner seinen Lesern das Konzept des Zufalls durch quantenphysikalische Grundfragen wie etwa Schrödingers Katze, Quantenüberlagerung und Quantenverschränkung nahe zu bringen. In all diesen angewandten Beispielen hat man über das System nur minimale bis gar keine Informationen und der Ausgang des Experiments erscheint deshalb als zufällig. Gemeint ist in diesem Sinne, dass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, da eben die nötigen Informationen fehlen und somit auch der kausale Zusammenhang nicht ersichtlich wird. Es ist uns nicht möglich diese Ereignisse mittels Berechnungen und zugrunde liegender Naturgesetze exakt vorherzusagen oder einen kausalen Zusammenhang herzustellen. Doch ist das Universum nun als zufällig anzusehen? Nach der Definition von Florian Aigner bedeutet dies, dass es im Universum Ereignisse gibt, für die es unmöglich ist alle Informationen zu kennen, sodass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, also für uns zufällig erscheint. Er sagt weiterhin:
 

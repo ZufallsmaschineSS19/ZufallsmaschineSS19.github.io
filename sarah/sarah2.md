@@ -26,7 +26,7 @@ _<center>“Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vo
 <div style="text-align: justify">Wir haben es also mit echtem Zufall zu tun, wenn wir trotz vollständiger Informationen keine Aussage über den Ausgang des Experiments treffen können. Die Experimente der Quantenphysik und auch die auf dieser Website aufgeführten Experimente und Überlegungen zur Erzeugung von Zufallszahlen unterstützen also die Theorie, dass das Universum zufällig sei.</div>
   <br>
 
-<center><span style="color:rgb(69,111,154)">Zufall = Je weniger Informationen ich habe, desto eher sehe ich ein Ereignis als zufällig an</span></center>  <br>
+<center><span style="color:rgb(69,111,154)">Zufall = Je weniger Informationen ich habe, desto eher sehe ich ein Ereignis als zufällig an</span></center>
 <center><span style="color:rgb(69,111,154)">Echter Zufall = Selbst bei vollständiger Information kann ich das Ereignis nicht vorhersagen</span></center>
 
   <br>

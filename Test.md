@@ -1,8 +1,6 @@
 # ZufallsmaschineSS19.github.io
 Repository for our project
 
-$\forall x \in X, \quad \exists y \leq \epsilon$
-
 Test another Latex-Formel solution:
 
 ![formel0](images/CodeCogsEqn.gif)

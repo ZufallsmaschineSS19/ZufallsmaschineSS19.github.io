@@ -5,7 +5,7 @@
 ## <center><span style="color:rgb(95,67,37)">Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner</span></center>
 
 
-Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen. 
+<div style="text-align: justify">Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen.</div>
 
 
 

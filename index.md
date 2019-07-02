@@ -34,7 +34,7 @@ zu finden.
 
 [Zufälligkeit von Pi](ML_approach/pi_test_with_nn.md)
 
-### Die Philosophie des Zufalls:
+### Die Philosophie des Zufalls
 
 [Das Universum: willkürlich - zufällig - chaotisch](sarah/sarah2.md)
 

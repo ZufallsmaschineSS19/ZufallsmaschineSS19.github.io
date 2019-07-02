@@ -47,8 +47,8 @@ _<center>“Zufall ist durch Unvorhersehbarkeit gekennzeichnet, von einem unvorh
   <br>
 
 <div style="text-align: justify">Er drückt damit aus, dass Zufall keine Eigenschaft des Universums ist, sondern dass Zufall etwas ist, das erst durch uns und unser Denken zu einem realen Phänomen wird. [3]  <br>
-Wir können zunächst mal darüber nachdenken, wie viele zufällige Ereignisse zusammenspielen mussten, damit wir Menschen auf der Erde leben: Vom Materie-Verhältnis im Urknall, über die Bedingungen eines bewohnbaren Planeten, dem Zusammenfinden der richtigen Moleküle, damit eine Struktur ausgebildet werden kann, bis hin zur Evolution, die uns Menschen letztendlich zu dem geführt hat, was wir heute sind.[8] Wäre das Universum auch nur ein bisschen anders als wir es kennen, dann würde es uns vielleicht gar nicht geben.  <br>
-Anders herum kann es aber auch kein Universum geben, in dem sich jemand darüber wundert, dass aufgrund abweichender physikalischer Gesetze kein intelligentes Leben entstanden ist, dass es keinen bewohnbaren Planeten gibt oder dass die Moleküle keine Strukturen ausbilden können. Denn in einem solchen Universum gäbe es nämlich niemanden, der sich über so etwas überhaupt wundern könnte. Es gäbe dort auch keine Wissenschaft, die es erlaubt all diese Ereignisse als Zufall zu bezeichnen. [8]</div>
+Wir können zunächst mal darüber nachdenken, wie viele zufällige Ereignisse zusammenspielen mussten, damit wir Menschen auf der Erde leben: Vom Materie-Verhältnis im Urknall, über die Bedingungen eines bewohnbaren Planeten, dem Zusammenfinden der richtigen Moleküle, damit eine Struktur ausgebildet werden kann, bis hin zur Evolution, die uns Menschen letztendlich zu dem geführt hat, was wir heute sind. [8] Wäre das Universum auch nur ein bisschen anders als wir es kennen, dann würde es uns vielleicht gar nicht geben.  <br>
+Anders herum kann es aber auch kein Universum geben, in dem sich jemand darüber wundert, dass aufgrund abweichender physikalischer Gesetze kein intelligentes Leben entstanden ist, dass es keinen bewohnbaren Planeten gibt oder dass die Moleküle keine Strukturen ausbilden können. Denn in einem solchen Universum gäbe es nämlich niemanden, der sich über so etwas überhaupt wundern könnte. Es gäbe dort auch keine Wissenschaft, die es erlaubt all diese Ereignisse als Zufall zu bezeichnen.  [8]</div>
 
 _<center>“Gäbe es im ganzen Universum keine Planeten und kein Leben, dann hätte der Begriff Zufall gar keinen Sinn. Nicht wir Menschen sind da, weil uns der Zufall hervorgebracht hat, sondern der Zufall ist da, weil wir Menschen ihn hervorbringen.“</center>_
   <br>
@@ -66,7 +66,7 @@ Wir Menschen suchen stets nach Ursachen in der Welt. Wir wollen auf jede Frage e
   <br>
   <br>
 
-[1] vgl. https://www.duden.de/rechtschreibung/Willkuer (Stand: 23.06.2019)  <br>
+[1]: vgl. https://www.duden.de/rechtschreibung/Willkuer (Stand: 23.06.2019)  <br>
 [2] vgl. https://de.wikipedia.org/wiki/Genmutation (Stand: 23.06.2019)  <br>
 [3] vgl. https://hpd.de/artikel/zufall-universum-und-du-13970 (Stand: 23.06.2019)  <br>
 [4] vgl. https://www.naklar.at/content/features/quantenzufall/ (Stand: 23.06.2019)  <br>

@@ -5,8 +5,6 @@
 ## <center><span style="color:rgb(95,67,37)">Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner</span></center>
 
 
-
-
 Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen. 
 
 
@@ -25,7 +23,7 @@ Was bedeutet eigentlich Zufall? Eine häufige Definition von Zufall ist ein Erei
 Die Wahrnehmung von Zufall bedingt der grundlegenden Fähigkeit der Wahrscheinlichkeits-einschätzung.[3][4] Je weniger Informationen uns also zur Verfügung stehen, desto wahrscheinlicher werden wir ein Ereignis als zufällig einstufen. Von dieser Überlegung ausgehend können wir uns nun dem Zufall in der Quantenphysik zuwenden. Als promovierter Quantenphysiker versucht Florian Aigner seinen Lesern das Konzept des Zufalls durch quantenphysikalische Grundfragen wie etwa Schrödingers Katze, Quantenüberlagerung und Quantenverschränkung nahe zu bringen. In all diesen angewandten Beispielen hat man über das System nur minimale bis gar keine Informationen und der Ausgang des Experiments erscheint deshalb als zufällig. Gemeint ist in diesem Sinne, dass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, da eben die nötigen Informationen fehlen und somit auch der kausale Zusammenhang nicht ersichtlich wird. Es ist uns nicht möglich diese Ereignisse mittels Berechnungen und zugrunde liegender Naturgesetze exakt vorherzusagen oder einen kausalen Zusammenhang herzustellen. Doch ist das Universum nun als zufällig anzusehen? Nach der Definition von Florian Aigner bedeutet dies, dass es im Universum Ereignisse gibt, für die es unmöglich ist alle Informationen zu kennen, sodass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, also für uns zufällig erscheint. Er sagt weiterhin:
 
 
-<center> “Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vorhersagen, wenn man über das Versuchsobjekt alles weiß, was es zu wissen gibt.“ </center>
+<center> “*Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vorhersagen, wenn man über das Versuchsobjekt alles weiß, was es zu wissen gibt.*“ </center>
 
 
 Wir haben es also mit echtem Zufall zu tun, wenn wir trotz vollständiger Informationen keine Aussage über den Ausgang des Experiments treffen können. Die Experimente der Quantenphysik und auch die auf dieser Website aufgeführten Experimente und Überlegungen zur Erzeugung von Zufallszahlen unterstützen also die Theorie, dass das Universum zufällig sei.

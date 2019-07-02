@@ -1,18 +1,11 @@
+# Das Universum
+# willkürlich - zufällig - chaotisch
 
-Hallo.
-
-![bild1](../sarah/quokka1_2x.jpg)
-
-
-**Hier die Abstimmung darueber, ob Quokkas suess sind:**
-
-|               | Anzahl        | Prozent  |
-| ------------- |:-------------:| -----:   |
-| suess         | 276317        |  100     |
-| nicht suess   | 0             |  0       |
+## Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner
 
 
-*Und hier noch ein Video von Quokkas:*
+Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen. 
 
 
-[Klicke hier fuer ein cooles Video](https://www.youtube.com/watch?v=zFO-0AlgSDI)
+### Ist das Universum willkürlich?
+Aus der Ferne betrachtet scheint es manchmal so, als ob im Universum viele Dinge willkürlich passieren. Laut der Herkunft des Wortes „Willkür“ bedeutet dies, dass das Universum ein die allgemein geltenden Gesetze missachtendes, an den eigenen Interessen ausgerichtetes und die eigene Macht nutzendes Handeln hervorbringen würde.[1] Doch kann man dem Universum eine solche Personifizierung und ein Bewusstsein für sein Handeln wirklich zusprechen? Kometen fliegen willkürlich durch das All, chemische Stoffe reagieren willkürlich miteinander, Genmutationen passieren willkürlich - all diese Beispiele basieren nicht auf der Willkür des Universums, sondern auf den darin existierenden Naturgesetzen. Kometen fliegen nicht willkürlich, sondern richten ihre Flugbahn nach den auf sie wirkenden Kräften und gespeicherten Energien aus. Ein Komet wird nicht von dem Willen des Universums entgegen der Naturgesetze durch das All bewegt. Das Universum übernimmt in diesem Zusammenhang keine aktive Rolle des Denkens oder Handelns. Ähnlich verhält es sich mit der Reaktion chemischer Stoffe. Zwei Stoffe reagieren aufgrund der chemischen Gesetze miteinander, aber nicht, weil es das Universum gerade so will. Doch wie verhält es sich mit der Genmutation? Eine Genmutation beschreibt die Veränderung des Erbgutes in nur einem Gen, es wird also lediglich eine Base verändert, entfernt oder hinzugefügt. Diese Mutation wird entweder durch eine fehlerhafte Replikation (Vervielfältigung) der DNA ausgelöst, oder ein Mutagen (äußere Einwirkung) verursacht einen Basenaustausch.[2] Genmutationen haben also verschiedene Ursachen, treten allerdings nicht willkürlich auf, denn auch hier kann nicht von dem aktiven Handeln des Universums gesprochen werden. Aus Willkür - also anhand des aus eigenem Willen ausgeführten Handels - scheint das Universum nicht zu agieren.

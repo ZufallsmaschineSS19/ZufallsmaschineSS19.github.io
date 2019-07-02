@@ -1,5 +1,5 @@
-# Das Universum
-# willkürlich - zufällig - chaotisch
+# <span style="color:orange">Das Universum</span>
+# <span style="color:orange">willkürlich - zufällig - chaotisch</span>
 
 ## Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner
 

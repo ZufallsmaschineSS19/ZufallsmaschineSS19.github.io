@@ -5,7 +5,7 @@
 ## <center><span style="color:rgb(95,67,37)">Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner</span></center>
   <br>
   <br>
-<div style="text-align: justify"> <pre></pre>Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen.</div>
+<div style="text-align: justify"> `` `` Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen.</div>
   <br>
   
 ### <center><span style="color:rgb(95,67,37)">Ist das Universum willkürlich?</span></center>
@@ -25,10 +25,10 @@ _<center>“Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vo
 
 <div style="text-align: justify">Wir haben es also mit echtem Zufall zu tun, wenn wir trotz vollständiger Informationen keine Aussage über den Ausgang des Experiments treffen können. Die Experimente der Quantenphysik und auch die auf dieser Website aufgeführten Experimente und Überlegungen zur Erzeugung von Zufallszahlen unterstützen also die Theorie, dass das Universum zufällig sei.</div>
 
-
-|Zufall = Je weniger Informationen ich habe, desto eher sehe ich ein Ereignis als zufällig an|
-|Echter Zufall = Selbst bei vollständiger Information kann ich das Ereignis nicht vorhersagen|
-
+<kbd>
+Zufall = Je weniger Informationen ich habe, desto eher sehe ich ein Ereignis als zufällig an
+Echter Zufall = Selbst bei vollständiger Information kann ich das Ereignis nicht vorhersagen
+</kbd>
   <br>
   
 ### <center><span style="color:rgb(95,67,37)">Ist das Universum chaotisch?</span></center>

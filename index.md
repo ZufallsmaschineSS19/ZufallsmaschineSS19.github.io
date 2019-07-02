@@ -34,9 +34,9 @@ zu finden.
 
 [Zufälligkeit von Pi](ML_approach/pi_test_with_nn.md)
 
-### Sarahs Projekt:
+### Die Philosophie des Zufalls:
 
-[Sarahs Projekt](sarah/sarah2.md)
+[Das Universum: willkürlich - zufällig - chaotisch](sarah/sarah2.md)
 
 ### ZenerZufall
 

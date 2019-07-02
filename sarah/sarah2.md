@@ -6,13 +6,13 @@
 
 
 
+
 Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Oder meinen sie vielleicht alle das gleiche? Wir wollen uns mit den Begriffen auseinander setzen, ihre Bedeutung verstehen und einen Zusammenhang zum Universum herstellen. 
 
 
 
 ### <center><span style="color:rgb(95,67,37)">Ist das Universum willkürlich?</span></center>
 Aus der Ferne betrachtet scheint es manchmal so, als ob im Universum viele Dinge willkürlich passieren. Laut der Herkunft des Wortes „Willkür“ bedeutet dies, dass das Universum ein die allgemein geltenden Gesetze missachtendes, an den eigenen Interessen ausgerichtetes und die eigene Macht nutzendes Handeln hervorbringen würde.[1] Doch kann man dem Universum eine solche Personifizierung und ein Bewusstsein für sein Handeln wirklich zusprechen? Kometen fliegen willkürlich durch das All, chemische Stoffe reagieren willkürlich miteinander, Genmutationen passieren willkürlich - all diese Beispiele basieren nicht auf der Willkür des Universums, sondern auf den darin existierenden Naturgesetzen. Kometen fliegen nicht willkürlich, sondern richten ihre Flugbahn nach den auf sie wirkenden Kräften und gespeicherten Energien aus. Ein Komet wird nicht von dem Willen des Universums entgegen der Naturgesetze durch das All bewegt. Das Universum übernimmt in diesem Zusammenhang keine aktive Rolle des Denkens oder Handelns. Ähnlich verhält es sich mit der Reaktion chemischer Stoffe. Zwei Stoffe reagieren aufgrund der chemischen Gesetze miteinander, aber nicht, weil es das Universum gerade so will. Doch wie verhält es sich mit der Genmutation? Eine Genmutation beschreibt die Veränderung des Erbgutes in nur einem Gen, es wird also lediglich eine Base verändert, entfernt oder hinzugefügt. Diese Mutation wird entweder durch eine fehlerhafte Replikation (Vervielfältigung) der DNA ausgelöst, oder ein Mutagen (äußere Einwirkung) verursacht einen Basenaustausch.[2] Genmutationen haben also verschiedene Ursachen, treten allerdings nicht willkürlich auf, denn auch hier kann nicht von dem aktiven Handeln des Universums gesprochen werden. Aus Willkür - also anhand des aus eigenem Willen ausgeführten Handels - scheint das Universum nicht zu agieren.
-
 
 
 ### <center><span style="color:rgb(95,67,37)">Ist das Universum zufällig?</span></center>
@@ -25,7 +25,7 @@ Was bedeutet eigentlich Zufall? Eine häufige Definition von Zufall ist ein Erei
 Die Wahrnehmung von Zufall bedingt der grundlegenden Fähigkeit der Wahrscheinlichkeits-einschätzung.[3][4] Je weniger Informationen uns also zur Verfügung stehen, desto wahrscheinlicher werden wir ein Ereignis als zufällig einstufen. Von dieser Überlegung ausgehend können wir uns nun dem Zufall in der Quantenphysik zuwenden. Als promovierter Quantenphysiker versucht Florian Aigner seinen Lesern das Konzept des Zufalls durch quantenphysikalische Grundfragen wie etwa Schrödingers Katze, Quantenüberlagerung und Quantenverschränkung nahe zu bringen. In all diesen angewandten Beispielen hat man über das System nur minimale bis gar keine Informationen und der Ausgang des Experiments erscheint deshalb als zufällig. Gemeint ist in diesem Sinne, dass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, da eben die nötigen Informationen fehlen und somit auch der kausale Zusammenhang nicht ersichtlich wird. Es ist uns nicht möglich diese Ereignisse mittels Berechnungen und zugrunde liegender Naturgesetze exakt vorherzusagen oder einen kausalen Zusammenhang herzustellen. Doch ist das Universum nun als zufällig anzusehen? Nach der Definition von Florian Aigner bedeutet dies, dass es im Universum Ereignisse gibt, für die es unmöglich ist alle Informationen zu kennen, sodass der Ausgang des Experiments nicht zuverlässig vorhersagbar ist, also für uns zufällig erscheint. Er sagt weiterhin:
 
 
-<center> *“Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vorhersagen, wenn man über das Versuchsobjekt alles weiß, was es zu wissen gibt.“* </center>
+<center> “Die Ergebnisse eines Quanten-Experiments kann man auch dann nicht vorhersagen, wenn man über das Versuchsobjekt alles weiß, was es zu wissen gibt.“ </center>
 
 
 Wir haben es also mit echtem Zufall zu tun, wenn wir trotz vollständiger Informationen keine Aussage über den Ausgang des Experiments treffen können. Die Experimente der Quantenphysik und auch die auf dieser Website aufgeführten Experimente und Überlegungen zur Erzeugung von Zufallszahlen unterstützen also die Theorie, dass das Universum zufällig sei.

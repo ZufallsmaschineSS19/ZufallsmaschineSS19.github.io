@@ -1,4 +1,4 @@
-# <span style="color:orange">Das Universum</span>
+# <span style="color:rgb(238,118,33)">Das Universum</span>
 # <span style="color:orange">willkürlich - zufällig - chaotisch</span>
 
 ## Eine philosophische Diskussion anhand des Buches „Der Zufall, das Universum und du“ von Florian Aigner

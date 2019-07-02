@@ -66,11 +66,11 @@ Wir Menschen suchen stets nach Ursachen in der Welt. Wir wollen auf jede Frage e
   <br>
   <br>
 
-[1]: vgl. https://www.duden.de/rechtschreibung/Willkuer (Stand: 23.06.2019)  <br>
+[1] vgl. https://www.duden.de/rechtschreibung/Willkuer (Stand: 23.06.2019)  <br>
 [2] vgl. https://de.wikipedia.org/wiki/Genmutation (Stand: 23.06.2019)  <br>
 [3] vgl. https://hpd.de/artikel/zufall-universum-und-du-13970 (Stand: 23.06.2019)  <br>
 [4] vgl. https://www.naklar.at/content/features/quantenzufall/ (Stand: 23.06.2019)  <br>
 [5] vgl. https://de.wikipedia.org/wiki/Chaos (Stand: 23.06.2019)  <br>
 [6] vgl. https://de.wikipedia.org/wiki/Chaosforschung (Stand: 23.06.2019)  <br>
 [7] vgl. https://www.sueddeutsche.de/kultur/buch-ueber-den-zufall-wie-viel-einfluss-haben-wir-auf-unser-schicksal-1.3345831 (Stand: 23.06.2019)  <br>
-[8] Florian Aigner
+[8] Florian Aigner: Der Zufall, das Universum und du. Die Wissenschaft vom Glück, Christian Brandstätter Verlag, Wien, 2. Auflage 2017

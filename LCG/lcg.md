@@ -125,6 +125,15 @@
 </figure>
 <h4 id="minstd_rand">minstd_rand</h4>
 <p>The parameters for <code>minstd_rand</code> are <span class="math display">\[A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<figure>
+<img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
+<figure>
+<img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
+<figure>
+<img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

@@ -179,6 +179,13 @@ $$A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 The parameters for `minstd_rand` are
 $$A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 
+![Results for the statistical tests for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
+
+![Results for the Spectral Test for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
+
+![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+
+
 # References
 
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.

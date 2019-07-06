@@ -144,14 +144,16 @@ For a detailed explanation please refer to the excellent (although technical) ch
 
 ## Performing the tests
 
-To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.
+To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). We pick a couple of "famous" LCG parameters and perform tests in a range around them.
+
 
 ### RANDU
-A very famous and bad example is the LCG implementation `RANDU` by IBM, that has been used since the 1960s [[1]](#knuth). 
+A very famous and bad example is the LCG implementation `RANDU` by IBM, that has been used since the 1960s [[1]](#knuth). The faults were discovered by 1963 but `RANDU` has been noted to have been in use up until 1999. `RANDU` is the reason that results from simulations from that era should always be taken with a grain of salt.
 
 The parameters for `RANDU` are
 $$A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}$$
 
+First we perform the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed tests for LCGs that have $A = 65536 = 2^{16}$.
 ![Results for the statistical tests for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
 
 ![Results for the Spectral Test for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)

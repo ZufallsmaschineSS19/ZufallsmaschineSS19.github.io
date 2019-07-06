@@ -97,13 +97,11 @@
 <p>The closer the lines are to each other, the higher quality the random numbers are. This is because a sequence of random numbers will fill the space (the squared interval <span class="math inline">\((0, M) \times (0, M)\)</span> in two dimensions). This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
 <p>For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
-<p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.</p>
+<p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. We pick a couple of “famous” LCG parameters and perform tests in a range around them.</p>
 <h3 id="randu">RANDU</h3>
-<p>A very famous and bad example is the LCG implementation <code>RANDU</code> by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>.</p>
+<p>A very famous and bad example is the LCG implementation <code>RANDU</code> by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>. The faults were discovered by 1963 but <code>RANDU</code> has been noted to have been in use up until 1999. <code>RANDU</code> is the reason that results from simulations from that era should always be taken with a grain of salt.</p>
 <p>The parameters for <code>RANDU</code> are <span class="math display">\[A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}\]</span></p>
-<figure>
-<img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
-</figure>
+<p>First we perform the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed tests for LCGs that have <span class="math inline">\(A = 65536 = 2^{16}\)</span>. <img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10." /></p>
 <figure>
 <img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>

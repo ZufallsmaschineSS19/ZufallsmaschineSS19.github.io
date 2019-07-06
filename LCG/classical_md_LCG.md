@@ -138,16 +138,24 @@ We can find similar pictures in higher dimensions. For three dimensions we would
 
 These lines are determined by our choice of parameters for the LCG. Since the increment $C$ only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier $A$ and the modulus $M$.
 
-The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).
+The closer the lines are to each other, the higher quality the random numbers are. This is because a sequence of random numbers will fill the space (the squared interval $(0, M) \times (0, M)$ in two dimensions). This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).
 
-For a detailed explanation please refer to the excellent chapter on the Spectral Test in [Knuths book [1] (pp. 89)](#knuth).
+For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in [Knuths book [1] (pp. 89)](#knuth).
 
 ## Performing the tests
 
-To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock).
+To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.
+
+A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s ([1])(#knuth). The parameters are
+$$M = 65539$ \quad $A = 2^{31}$ \quad $C = 0$$
+
+
+
 
 # References
 
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
  * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf), 1999.
  * <a name="plock">[3]</a> Matthias Plock. _lcg\_tests. A small analysis suite for linear congruential generators for a university seminar._ [https://github.com/Klump3n/lcg_tests](https://github.com/Klump3n/lcg_tests), 2019.
+ * <a name="cpp">[4]</a> CPP Reference: std::linear\_congruential\_engine[https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine](https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine)
+ 

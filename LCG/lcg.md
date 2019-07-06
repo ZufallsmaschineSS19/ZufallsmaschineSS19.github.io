@@ -94,13 +94,15 @@
 <p><img src="spectral_v2_fail.png" /></p>
 <p>What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines. We can find similar pictures in higher dimensions. For three dimensions we would have to plot <span class="math inline">\(X_{n}\)</span> versus <span class="math inline">\(X_{n+1}\)</span> versus <span class="math inline">\(X_{n+1}\)</span>. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).</p>
 <p>These lines are determined by our choice of parameters for the LCG. Since the increment <span class="math inline">\(C\)</span> only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier <span class="math inline">\(A\)</span> and the modulus <span class="math inline">\(M\)</span>.</p>
-<p>The closer the lines are to each other, the higher quality the random numbers are. This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
-<p>For a detailed explanation please refer to the excellent chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
+<p>The closer the lines are to each other, the higher quality the random numbers are. This is because a sequence of random numbers will fill the space (the squared interval <span class="math inline">\((0, M) \times (0, M)\)</span> in two dimensions). This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
+<p>For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
-<p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>.</p>
+<p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.</p>
+<p>A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s ([1])(#knuth). The parameters are <span class="math display">\[M = 65539$ \quad $A = 2^{31}$ \quad $C = 0\]</span></p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
 <li><a name="schindler">[2]</a> Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf" class="uri">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
 <li><a name="plock">[3]</a> Matthias Plock. <em>lcg_tests. A small analysis suite for linear congruential generators for a university seminar.</em> <a href="https://github.com/Klump3n/lcg_tests" class="uri">https://github.com/Klump3n/lcg_tests</a>, 2019.</li>
+<li><a name="cpp">[4]</a> CPP Reference: std::linear_congruential_engine<a href="https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine" class="uri">https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine</a></li>
 </ul>

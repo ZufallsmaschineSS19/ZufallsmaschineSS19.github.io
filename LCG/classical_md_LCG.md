@@ -153,12 +153,15 @@ A very famous and bad example is the LCG implementation `RANDU` by IBM, that has
 The parameters for `RANDU` are
 $$A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}$$
 
-First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed tests for LCGs that have $A = 65536 = 2^{16}$. In general tests with even parameters $A$ and $M$ seem to fail more often.
+##### Statistical test
+First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed statistical tests for LCGs that have $A = 65536 = 2^{16}$. In general tests with even parameters $A$ and $M$ seem to fail more often.
 ![Results for the statistical tests for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
 
+##### Spectral test
 The Spectral Test is performed for the dimensions $2$ to $5$. These are still computationally easy. We note that for the chosen interval no parameter combination has passed the tests for every dimension $2$, $3$, $4$ and $5$. On the top right corner we spot two combinations that passed $3$ out of $4$ tests.
 ![Results for the Spectral Test for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
 
+##### Spectral test when all statistical tests passed
 Ideally the chosen parameters pass the statistical tests as well as the spectral test. For `RANDU` and the chosen interval around the proposed paramter combination, no combination passed all the statistical tests and the Spectral test for more than $2$ dimensions.
 ![Results for the Spectral Test in places where _ALL_ statistical tests passed for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
 

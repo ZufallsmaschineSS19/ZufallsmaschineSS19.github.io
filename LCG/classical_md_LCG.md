@@ -134,7 +134,7 @@ Let's generate a random number sequence $X_{n}$ (the parameters for the LCG are 
 ![](spectral_v2_fail.png)
 
 What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines.
-We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+1}$. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).
+We can find similar pictures in higher dimensions. For three dimensions we would have to plot $X_{n}$ versus $X_{n+1}$ versus $X_{n+2}$. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).
 
 These lines are determined by our choice of parameters for the LCG. Since the increment $C$ only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier $A$ and the modulus $M$.
 
@@ -147,7 +147,7 @@ For a detailed explanation please refer to the excellent (although technical) ch
 To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.
 
 A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s ([1])(#knuth). The parameters are
-$$M = 65539$ \quad $A = 2^{31}$ \quad $C = 0$$
+$$M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}$$
 
 
 
@@ -157,5 +157,5 @@ $$M = 65539$ \quad $A = 2^{31}$ \quad $C = 0$$
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
  * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf), 1999.
  * <a name="plock">[3]</a> Matthias Plock. _lcg\_tests. A small analysis suite for linear congruential generators for a university seminar._ [https://github.com/Klump3n/lcg_tests](https://github.com/Klump3n/lcg_tests), 2019.
- * <a name="cpp">[4]</a> CPP Reference: std::linear\_congruential\_engine[https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine](https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine)
+ * <a name="cpp">[4]</a> CPP Reference. _std::linear\_congruential\_engine_ [https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine](https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine)
  

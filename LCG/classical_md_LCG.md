@@ -209,19 +209,19 @@ $$A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 
 We again notice a reduction in passed tests when $M$ changes from $M = 2^{31} - 1$ to $M = 2^{32}$. Other than that it compares well with the statistical test results from `minstd_rand0`.
 
-![Results for the statistical tests for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
+![Results for the statistical tests for `minstd_rand` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
 
 ##### Spectral test
 
 Comparing the results from the Spectral test for `minstd_rand` to `minstd_rand0`, `minstd_rand` looks a lot brighter. For the chosen interval we see $7$ parameter sets that pass the Spectral test for every dimension. There are many parameter combinations for which $3$ out of $4$ tests pass.
 
-![Results for the Spectral Test for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
+![Results for the Spectral Test for `minstd_rand` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
 
 ##### Spectral test when all statistical tests passed
 
 We finally see parameter combinations for which all statistical tests pass and for which then also the Spectral tests for every chosen dimension passes.
 
-![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$. Parameters where the statistical tests failed are marked white.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$. Parameters where the statistical tests failed are marked white.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
 
 In the very center of the figure we see the proposed parameter for `minstd_rand` in yellow, meaning that it passed every statistical test and every Spectral test. We conclude that the proposed parameters are a reasonable choice.
 

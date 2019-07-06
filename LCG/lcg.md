@@ -103,6 +103,15 @@
 <p>The parameters for <code>RANDU</code> are <span class="math display">\[A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}\]</span></p>
 <h3 id="c-lcg-implementations">C++ LCG implementations</h3>
 <p>A more recent example is the LCG implementation found in the C++ standard <a href="#cpp">[4]</a>. There exist two different parameter choices, <code>minstd_rand0</code> and <code>minstd_rand</code>.</p>
+<figure>
+<img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for RANDU in an interval of A = 65539 \pm 10 and (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\((2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
+<figure>
+<img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for RANDU in an interval of A = 65539 \pm 10 and (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\((2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
+<figure>
+<img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for RANDU in an interval of A = 65539 \pm 10 and (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\((2^{31} - 1) \pm 10\)</span>.</figcaption>
+</figure>
 <h4 id="minstd_rand0">minstd_rand0</h4>
 <p>The parameters for <code>minstd_rand0</code> are <span class="math display">\[A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
 <h4 id="minstd_rand">minstd_rand</h4>

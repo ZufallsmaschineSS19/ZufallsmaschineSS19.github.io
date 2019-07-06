@@ -98,7 +98,15 @@
 <p>For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
 <p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.</p>
-<p>A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>. The parameters are <span class="math display">\[M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}\]</span></p>
+<h3 id="randu"><code>RANDU</code></h3>
+<p>A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>.</p>
+<p>The parameters are <span class="math display">\[A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}\]</span></p>
+<h3 id="c-lcg-implementations">C++ LCG implementations</h3>
+<p>A more recent example is the LCG implementation found in the C++ standard. There exist two different parameter choices, <code>minstd_rand0</code> and <code>minstd_rand</code>.</p>
+<h4 id="minstd_rand0"><code>minstd_rand0</code></h4>
+<p>The parameters are <span class="math display">\[A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<h4 id="minstd_rand"><code>minstd_rand</code></h4>
+<p>The parameters are <span class="math display">\[A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

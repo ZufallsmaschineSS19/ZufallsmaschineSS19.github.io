@@ -146,11 +146,25 @@ For a detailed explanation please refer to the excellent (although technical) ch
 
 To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.
 
-A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s [[1]](#knuth). The parameters are
-$$M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}$$
+### `RANDU`
+A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s [[1]](#knuth). 
+
+The parameters are
+$$A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}$$
 
 
+### C++ LCG implementations
+A more recent example is the LCG implementation found in the C++ standard. There exist two different parameter choices, `minstd_rand0` and `minstd_rand`.
 
+#### `minstd_rand0`
+
+The parameters are
+$$A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
+
+#### `minstd_rand`
+
+The parameters are
+$$A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 
 # References
 

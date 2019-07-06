@@ -146,7 +146,7 @@ For a detailed explanation please refer to the excellent (although technical) ch
 
 To perform the tests that were introduced we can use the Python program downloadable [here](https://github.com/Klump3n/lcg_tests) [[3]](#plock). With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.
 
-A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s ([1])(#knuth). The parameters are
+A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s [[1]](#knuth). The parameters are
 $$M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}$$
 
 
@@ -157,5 +157,5 @@ $$M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}$$
  * <a name="knuth">[1]</a> Donald E. Knuth. _The Art of Computer Programming, Volume 2: Seminumerical Algorithms_. Addison-Wesley, 1997.
  * <a name="schindler">[2]</a> Werner Schindler. _Functionality classes and evaluation methodology for deterministic random number generators_. [https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf), 1999.
  * <a name="plock">[3]</a> Matthias Plock. _lcg\_tests. A small analysis suite for linear congruential generators for a university seminar._ [https://github.com/Klump3n/lcg_tests](https://github.com/Klump3n/lcg_tests), 2019.
- * <a name="cpp">[4]</a> CPP Reference. _std::linear\_congruential\_engine_ [https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine](https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine)
+ * <a name="cpp">[4]</a> CPP Reference. _std::linear\_congruential\_engine_ [https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine](https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine), looked up July 6, 2019.
  

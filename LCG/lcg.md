@@ -98,11 +98,11 @@
 <p>For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
 <p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. With it we can perform the aforementioned statistical tests and the spectral test on a set of parameters and generate analysis plots.</p>
-<p>A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s ([1])(#knuth). The parameters are <span class="math display">\[M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}\]</span></p>
+<p>A very famous and bad example is the LCG implementation RANDU by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>. The parameters are <span class="math display">\[M = 65539\mathrm{,} \quad A = 2^{31}\mathrm{,} \quad C = 0\mathrm{.}\]</span></p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>
 <li><a name="schindler">[2]</a> Werner Schindler. <em>Functionality classes and evaluation methodology for deterministic random number generators</em>. <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf" class="uri">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Zertifizierung/Interpretationen/AIS_20_Functionality_Classes_Evaluation_Methodology_DRNG_e.pdf</a>, 1999.</li>
 <li><a name="plock">[3]</a> Matthias Plock. <em>lcg_tests. A small analysis suite for linear congruential generators for a university seminar.</em> <a href="https://github.com/Klump3n/lcg_tests" class="uri">https://github.com/Klump3n/lcg_tests</a>, 2019.</li>
-<li><a name="cpp">[4]</a> CPP Reference. <em>std::linear_congruential_engine</em> <a href="https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine" class="uri">https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine</a></li>
+<li><a name="cpp">[4]</a> CPP Reference. <em>std::linear_congruential_engine</em> <a href="https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine" class="uri">https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine</a>, looked up July 6, 2019.</li>
 </ul>

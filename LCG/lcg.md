@@ -94,7 +94,7 @@
 <p><img src="spectral_v2_fail.png" /></p>
 <p>What do we see? Even though the statistical tests all pass, we see that the random numbers seem to fall onto a set of lines. We can find similar pictures in higher dimensions. For three dimensions we would have to plot <span class="math inline">\(X_{n}\)</span> versus <span class="math inline">\(X_{n+1}\)</span> versus <span class="math inline">\(X_{n+2}\)</span>. The random numbers would then fall on planes (or hyperplanes in four or more dimensions).</p>
 <p>These lines are determined by our choice of parameters for the LCG. Since the increment <span class="math inline">\(C\)</span> only shifts the random numbers it only affects the positions of the lines, not the distance or the angle. The distance and angle of the lines is determined by the multiplier <span class="math inline">\(A\)</span> and the modulus <span class="math inline">\(M\)</span>.</p>
-<p>The closer the lines are to each other, the higher quality the random numbers are. This is because a sequence of random numbers will fill the space (the squared interval <span class="math inline">\((0, M) \times (0, M)\)</span> in two dimensions). This is what the Spectral Test does: it finds the distance between adjacent lines (or (hyper-)planes).</p>
+<p>The closer the lines are to each other, the higher quality the random numbers are. This is because a sequence of random numbers will fill the space (the squared interval <span class="math inline">\((0, M) \times (0, M)\)</span> in two dimensions). This is what the Spectral Test does: it finds the distance (or rather the inverse of the distance) between adjacent lines (or (hyper-)planes).</p>
 <p>For a detailed explanation please refer to the excellent (although technical) chapter on the Spectral Test in <a href="#knuth">Knuths book [1] (pp. 89)</a>.</p>
 <h2 id="performing-the-tests">Performing the tests</h2>
 <p>To perform the tests that were introduced we can use the Python program downloadable <a href="https://github.com/Klump3n/lcg_tests">here</a> <a href="#plock">[3]</a>. We pick a couple of “famous” LCG parameters and perform tests in a range around them.</p>
@@ -120,7 +120,7 @@
 <h3 id="c-lcg-implementations">C++ LCG implementations</h3>
 <p>A more recent example is the LCG implementation found in the C++ standard <a href="#cpp">[4]</a>. There exist two different parameter choices, <code>minstd_rand0</code> and <code>minstd_rand</code>.</p>
 <h4 id="minstd_rand0">minstd_rand0</h4>
-<p>The parameters for <code>minstd_rand0</code> are <span class="math display">\[A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<p><code>minstd_rand0</code> has been adopted into the C++ “Minimal standard” in 1988. The parameters for <code>minstd_rand0</code> are <span class="math display">\[A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
 <h5 id="statistical-test-1">Statistical test</h5>
 <p>We again notice a reduction in passed tests when <span class="math inline">\(M\)</span> changes from <span class="math inline">\(M = 2^{31} - 1\)</span> to <span class="math inline">\(M = 2^{32}\)</span>.</p>
 <figure>
@@ -132,25 +132,29 @@
 <img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
 <h5 id="spectral-test-when-all-statistical-tests-passed-1">Spectral test when all statistical tests passed</h5>
-<p>The combined result is that we also don’t have any parameter combination where statistical tests and spectral tests in conjunction.</p>
+<p>The combined result is that we can’t find any parameter combinations where statistical tests and spectral tests both pass in conjunction.</p>
 <figure>
 <img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10. Parameters where the statistical tests failed are marked white." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>. Parameters where the statistical tests failed are marked white.</figcaption>
 </figure>
-<p>We conclude that this version of the C++ LCG, <code>minstd_rand0</code>, is a poor implementation and should not be used.</p>
-<h4 id="minstd_rand">minstd_rand</h4>
-<p>The parameters for <code>minstd_rand</code> are <span class="math display">\[A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<p>We conclude that this version of the C++ LCG, <code>minstd_rand0</code>, is a poor choice and should not be used.</p>
+<h4 id="minstd_rand-no-0-at-the-end">minstd_rand (no <span class="math inline">\(0\)</span> at the end)</h4>
+<p><code>minstd_rand</code> has been adopted into the C++ “Minimal standard” in 1993. The parameters for <code>minstd_rand</code> are <span class="math display">\[A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
 <h5 id="statistical-test-2">Statistical test</h5>
+<p>We again notice a reduction in passed tests when <span class="math inline">\(M\)</span> changes from <span class="math inline">\(M = 2^{31} - 1\)</span> to <span class="math inline">\(M = 2^{32}\)</span>. Other than that it compares well with the statistical test results from <code>minstd_rand0</code>.</p>
 <figure>
 <img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
 <h5 id="spectral-test-2">Spectral test</h5>
+<p>Comparing the results from the Spectral test for <code>minstd_rand</code> to <code>minstd_rand0</code>, <code>minstd_rand</code> looks a lot brighter. For the chosen interval we see <span class="math inline">\(7\)</span> parameter sets that pass the Spectral test for every dimension. There are many parameter combinations for which <span class="math inline">\(3\)</span> out of <span class="math inline">\(4\)</span> tests pass.</p>
 <figure>
 <img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
 <h5 id="spectral-test-when-all-statistical-tests-passed-2">Spectral test when all statistical tests passed</h5>
+<p>We finally see parameter combinations for which all statistical tests pass and for which then also the Spectral tests for every chosen dimension passes.</p>
 <figure>
 <img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10. Parameters where the statistical tests failed are marked white." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>. Parameters where the statistical tests failed are marked white.</figcaption>
 </figure>
+<p>In the very center of the figure we see the proposed parameter for <code>minstd_rand</code> in yellow, meaning that it passed every statistical test and every Spectral test. We conclude that the proposed parameters are a reasonable choice.</p>
 <h1 id="references">References</h1>
 <ul>
 <li><a name="knuth">[1]</a> Donald E. Knuth. <em>The Art of Computer Programming, Volume 2: Seminumerical Algorithms</em>. Addison-Wesley, 1997.</li>

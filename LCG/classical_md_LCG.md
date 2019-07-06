@@ -154,7 +154,7 @@ The parameters for `RANDU` are
 $$A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}$$
 
 ##### Statistical test
-First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed statistical tests for LCGs that have $A = 65536 = 2^{16}$. In general tests with even parameters $A$ and $M$ seem to fail more often.
+First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed statistical tests for LCGs that have $A = 65536 = 2^{16}$. We notice another reduction in passed tests when $M$ changes from $M = 2^{31} - 1$ to $M = 2^{32}$. This is due to the padding of the generated bit sequence (going from $31$ bits to $32$ bits, while the first two bits will be equal to $0$ most of the time. In general tests with even parameters $A$ and $M$ seem to fail more often.
 
 ![Results for the statistical tests for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
 
@@ -166,9 +166,9 @@ The Spectral Test is performed for the dimensions $2$ to $5$. These are still co
 ##### Spectral test when all statistical tests passed
 Ideally the chosen parameters pass the statistical tests as well as the spectral test. For `RANDU` and the chosen interval around the proposed parameter combination, no combination passed all the statistical tests and the Spectral test for more than $2$ dimensions.
 
-![Results for the Spectral Test in places where _ALL_ statistical tests passed for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+![Results for the Spectral Test in places where _ALL_ statistical tests passed for `RANDU` in an interval of $A = 65539 \pm 10$ and $M = (2^{31} - 1) \pm 10$. Parameters where the statistical tests failed are marked white.](results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
 
-The conclusion is that `RANDU` is a very bad LCG and should not be used.
+The conclusion is that `RANDU` is a very poor LCG and should not be used.
 
 
 ### C++ LCG implementations
@@ -179,11 +179,25 @@ A more recent example is the LCG implementation found in the C++ standard [[4]](
 The parameters for `minstd_rand0` are
 $$A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 
+##### Statistical test
+
+We again notice a reduction in passed tests when $M$ changes from $M = 2^{31} - 1$ to $M = 2^{32}$.
+
 ![Results for the statistical tests for `minstd_rand0` in an interval of $A = 16807 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
+
+##### Spectral test
+
+The results for the Spectral test for this version of the C++ LCG is comparable to the `RANDU` results. In the chosen interval no parameter combination passes the tests for every dimension. We spot a few combinations that pass $3$ out of $4$ tests.
 
 ![Results for the Spectral Test for `minstd_rand0` in an interval of $A = 16807 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
 
-![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 16807 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+##### Spectral test when all statistical tests passed
+
+The combined result is that we also don't have any parameter combination where statistical tests and spectral tests in conjunction.
+
+![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 16807 \pm 10$ and $M = (2^{31} - 1) \pm 10$. Parameters where the statistical tests failed are marked white.](results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+
+We conclude that this version of the C++ LCG, `minstd_rand0`, is a poor implementation and should not be used.
 
 
 #### minstd_rand
@@ -191,11 +205,17 @@ $$A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 The parameters for `minstd_rand` are
 $$A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}$$
 
+##### Statistical test
+
 ![Results for the statistical tests for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png)
+
+##### Spectral test
 
 ![Results for the Spectral Test for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png)
 
-![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
+##### Spectral test when all statistical tests passed
+
+![Results for the Spectral Test in places where _ALL_ statistical tests passed for `minstd_rand0` in an interval of $A = 48271 \pm 10$ and $M = (2^{31} - 1) \pm 10$. Parameters where the statistical tests failed are marked white.](results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png)
 
 
 # References

@@ -102,7 +102,7 @@
 <p>A very famous and bad example is the LCG implementation <code>RANDU</code> by IBM, that has been used since the 1960s <a href="#knuth">[1]</a>. The faults were discovered by 1963 but <code>RANDU</code> has been noted to have been in use up until 1999. <code>RANDU</code> is the reason that results from simulations from that era should always be taken with a grain of salt.</p>
 <p>The parameters for <code>RANDU</code> are <span class="math display">\[A = 65539\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31}-1\mathrm{.}\]</span></p>
 <h5 id="statistical-test">Statistical test</h5>
-<p>First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed statistical tests for LCGs that have <span class="math inline">\(A = 65536 = 2^{16}\)</span>. In general tests with even parameters <span class="math inline">\(A\)</span> and <span class="math inline">\(M\)</span> seem to fail more often.</p>
+<p>First we look at the statistical tests. Yellow colors indicate that all tests have passed. For the proposed parameter all statistical tests have passed. We notice a reduction in passed statistical tests for LCGs that have <span class="math inline">\(A = 65536 = 2^{16}\)</span>. We notice another reduction in passed tests when <span class="math inline">\(M\)</span> changes from <span class="math inline">\(M = 2^{31} - 1\)</span> to <span class="math inline">\(M = 2^{32}\)</span>. This is due to the padding of the generated bit sequence (going from <span class="math inline">\(31\)</span> bits to <span class="math inline">\(32\)</span> bits, while the first two bits will be equal to <span class="math inline">\(0\)</span> most of the time. In general tests with even parameters <span class="math inline">\(A\)</span> and <span class="math inline">\(M\)</span> seem to fail more often.</p>
 <figure>
 <img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
@@ -114,32 +114,42 @@
 <h5 id="spectral-test-when-all-statistical-tests-passed">Spectral test when all statistical tests passed</h5>
 <p>Ideally the chosen parameters pass the statistical tests as well as the spectral test. For <code>RANDU</code> and the chosen interval around the proposed parameter combination, no combination passed all the statistical tests and the Spectral test for more than <span class="math inline">\(2\)</span> dimensions.</p>
 <figure>
-<img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+<img src="results_x0_1_a_65529_65549_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for RANDU in an interval of A = 65539 \pm 10 and M = (2^{31} - 1) \pm 10. Parameters where the statistical tests failed are marked white." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>RANDU</code> in an interval of <span class="math inline">\(A = 65539 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>. Parameters where the statistical tests failed are marked white.</figcaption>
 </figure>
-<p>The conclusion is that <code>RANDU</code> is a very bad LCG and should not be used.</p>
+<p>The conclusion is that <code>RANDU</code> is a very poor LCG and should not be used.</p>
 <h3 id="c-lcg-implementations">C++ LCG implementations</h3>
 <p>A more recent example is the LCG implementation found in the C++ standard <a href="#cpp">[4]</a>. There exist two different parameter choices, <code>minstd_rand0</code> and <code>minstd_rand</code>.</p>
 <h4 id="minstd_rand0">minstd_rand0</h4>
 <p>The parameters for <code>minstd_rand0</code> are <span class="math display">\[A = 16807\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<h5 id="statistical-test-1">Statistical test</h5>
+<p>We again notice a reduction in passed tests when <span class="math inline">\(M\)</span> changes from <span class="math inline">\(M = 2^{31} - 1\)</span> to <span class="math inline">\(M = 2^{32}\)</span>.</p>
 <figure>
 <img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
+<h5 id="spectral-test-1">Spectral test</h5>
+<p>The results for the Spectral test for this version of the C++ LCG is comparable to the <code>RANDU</code> results. In the chosen interval no parameter combination passes the tests for every dimension. We spot a few combinations that pass <span class="math inline">\(3\)</span> out of <span class="math inline">\(4\)</span> tests.</p>
 <figure>
 <img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
+<h5 id="spectral-test-when-all-statistical-tests-passed-1">Spectral test when all statistical tests passed</h5>
+<p>The combined result is that we also don’t have any parameter combination where statistical tests and spectral tests in conjunction.</p>
 <figure>
-<img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+<img src="results_x0_1_a_16797_16817_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 16807 \pm 10 and M = (2^{31} - 1) \pm 10. Parameters where the statistical tests failed are marked white." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 16807 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>. Parameters where the statistical tests failed are marked white.</figcaption>
 </figure>
+<p>We conclude that this version of the C++ LCG, <code>minstd_rand0</code>, is a poor implementation and should not be used.</p>
 <h4 id="minstd_rand">minstd_rand</h4>
 <p>The parameters for <code>minstd_rand</code> are <span class="math display">\[A = 48271\mathrm{,} \quad C = 0\mathrm{,} \quad M = 2^{31} - 1\mathrm{.}\]</span></p>
+<h5 id="statistical-test-2">Statistical test</h5>
 <figure>
 <img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_statistical_c_is_0.png" alt="Results for the statistical tests for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the statistical tests for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
+<h5 id="spectral-test-2">Spectral test</h5>
 <figure>
 <img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_c_is_0.png" alt="Results for the Spectral Test for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
 </figure>
+<h5 id="spectral-test-when-all-statistical-tests-passed-2">Spectral test when all statistical tests passed</h5>
 <figure>
-<img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>.</figcaption>
+<img src="results_x0_1_a_48261_48281_c_0_0_m_2147483637_2147483657_spectral_if_statistical_c_is_0.png" alt="Results for the Spectral Test in places where ALL statistical tests passed for minstd_rand0 in an interval of A = 48271 \pm 10 and M = (2^{31} - 1) \pm 10. Parameters where the statistical tests failed are marked white." /><figcaption>Results for the Spectral Test in places where <em>ALL</em> statistical tests passed for <code>minstd_rand0</code> in an interval of <span class="math inline">\(A = 48271 \pm 10\)</span> and <span class="math inline">\(M = (2^{31} - 1) \pm 10\)</span>. Parameters where the statistical tests failed are marked white.</figcaption>
 </figure>
 <h1 id="references">References</h1>
 <ul>

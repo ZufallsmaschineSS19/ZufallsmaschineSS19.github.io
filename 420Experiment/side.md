@@ -19,10 +19,12 @@ low linewidth (<150 kHz) and therefore does not perturb our modulated
 deviations. The modulation of perturbations is made via a hot gas cell
 with a natural mix of Rubidium inside it. Natural abundances of Rubidium
 is subdivided in only to isotopes<sup>[5]</sup>:
+
 | Isotope         | Abundance    |
 | --------------- | ------------ |
 | <sup>87</sup>Rb | 28.487(11) % |
 | <sup>85</sup>Rb | 71.513(11) % |
+
 Those two have very similar atomic transitions although their hyperfine structure
 splitting is very different caused by different nuclear spins<sup>[6]</sup>.
 So one can use the gas cell

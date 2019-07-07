@@ -62,6 +62,7 @@ as a reliable method.
 ___
 ## First measurements
 ![Electrical Noise](FirstMeasurement.png "Electrical noise")
+
 The first measurement was just made on the amplified, electrical noise of the photodiode.
 It was set to a gain of 20 dB and the voltages where recorded.
 While it initially looked good the eye

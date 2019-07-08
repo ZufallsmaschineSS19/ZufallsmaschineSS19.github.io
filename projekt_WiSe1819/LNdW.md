@@ -29,7 +29,7 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 ### Das Trippel-Pendel alias *"Chaos-Pendel"*
 
-![Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
+[Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
 
 ### Mitmachspiele
 

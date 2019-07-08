@@ -1,8 +1,6 @@
 # <center><span style="color:rgb(95,67,37)">Untersuchung der Zufälligkeit von π mithilfe von Neuronalen Netzwerken</span></center>
-
+  <br>
 ## <center><span style="color:rgb(95,67,37)">Einleitung</span></center>
-  <br>
-  <br>
 <div style="text-align: justify">In diesem Q-Tutorium sollte sich mit Zufallszahlen beschäftigt werden. Nun stellt sich die Fragen: was sind Zufallszahlen? Wie lassen sie sich einteilen? Wie werden sie erzugt? und wie lässt sich ihre Güte überprüfen?
   <br>
 Hier nun ein kurzer Überblick wie sich Zufallszahlen (random numbers-RN) Einordnen lassen und wie sie erzeugt werden können.

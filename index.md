@@ -34,7 +34,7 @@ zu finden.
 
 [Lineare Kongruenzgeneratoren](LCG/lcg.md)
 
-### [Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken](ML_approach/pi_test_with_nn.md)
+### [Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken:](ML_approach/pi_test_with_nn.md)
 Maschinelles lernen und besonders Neuronale Netzwerke erreichen in vielen Anwendungen immer wieder erstaunlich gute Ergebnisse. In diesem Projekt soll mithilfe eines Neuronalen Netzwerks die Nachkommastellen der Zahl Pi vorhergesagt werden, um gegebenenfalls vorhadene Muster zu erkennen. Dieses Verfahren könnte auch auf andere Zufallszahlen, besonders Pseudo-Zufallszahlen, erweitert werden, um z.B. deren Güte zu überprüfen.
 
 ### Die Philosophie des Zufalls

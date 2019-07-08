@@ -1,6 +1,6 @@
-# Untersuchung der Zufälligkeit von π mithilfe von Neuronalen Netzwerken
+# <center><span style="color:rgb(95,67,37)">Untersuchung der Zufälligkeit von π mithilfe von Neuronalen Netzwerken</span></center>
 
-## Einleitung
+## <center><span style="color:rgb(95,67,37)">Einleitung</span></center>
 In diesem Q-Tutorium sollte sich mit Zufallszahlen beschäftigt werden. Nun stellt sich die Fragen: was sind Zufallszahlen? Wie lassen sie sich einteilen? Wie werden sie erzugt? und wie lässt sich ihre Güte überprüfen?
 
 Hier nun ein kurzer Überblick wie sich Zufallszahlen (random numbers-RN) Einordnen lassen und wie sie erzeugt werden können.
@@ -33,7 +33,7 @@ So soll deren Güte aufgrund der Vorhersagbarkeit der Zahlenfolgen (welche im Fa
 eigentlich bei 50% liegen sollte) überprüft werden.
 
 
-## Was ist ML und ein Neuronales Netzwerk eigentlich?
+## <center><span style="color:rgb(95,67,37)">Was ist ML und ein Neuronales Netzwerk eigentlich?</span></center>
 Im ML gibt es verschiedene Disziplinen. Einmal das Lernen mit beschrifteten oder markierten Daten (labeled data), also mit bekannten Zielwerten, was als überwachtes-Lernen (supervised learning) bezeichnet wird und das lernen an Daten ohne Zielwerte, was auch als unüberwachtes-Lernen (unsupervised learning) bezeichnet wird.
 
 Hier soll sich mit dem 'supervised learning' und besonders mit Neuronalen Netzwerken beschäftigt werden. Beim 'supervised learning' wird ein Problem durch einen Input und einen dazugehörigen markierten Output beschrieben. Als Beispiel kann hier eine Folge von Zufallszahlen genommen werden. Der Input könnten die ersten 5 Zahlen der Folge sein, der zugehörige Output die 6. Zahl der Folge. Ein anderes, weitaus bekannteres, Beispiel wäre die Klassifikation eines Bildes (also die Pixel als Inputs) ob eine Katze oder ein Hund dargestellt ist (Output). 
@@ -59,7 +59,7 @@ In den folgenden Kapiteln wird davon ausgegangen, dass ein grundlegendes Verstä
 In der Recherche zu diesem Projekt und besonders für ein etwas tieferes Verständnis von Neuronalen Netzwerken waren die kostenlosen Kurse von [Adrew Ng.](https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0) auf YouTube, sowie [Vorlesungsskripte](http://cs229.stanford.edu/syllabus.html) besonders hilfreich.
 
 
-## Idee und erste Tests
+## <center><span style="color:rgb(95,67,37)">Idee und erste Tests</span></center>
 Bei den ersten Untersuchungen wurde sich besonders an dem Paper ['Learning from Pseudo-Randomness with an
 Artificial Neural Network– Does God Play Pseudo-Dice?'](https://arxiv.org/ftp/arxiv/papers/1801/1801.01117.pdf) von Fenglei Fan und Ge Wang orientiert.
 In dieser Arbeit wurden die Nachkommastellen der transzendenten und somit auch irrationalen Zahl π auf ihre Zufälligkeit untersucht. Man geht davon aus, dass die Nachkommastellen der Zahl π vollkommen Zufällig sind und deshalb keine Periode enthalten dürften. Somit sollte man theoretisch, wenn man die Nachkommastellen der Zahl Pi erraten möchte eine 10%tige Chance haben, die richtige Ziffer (digit) voherzusagen. 
@@ -69,7 +69,7 @@ Diese Binäre Bit-Folge wurde nun in ein Trainings-Set umgewandelt, indem jeweil
 
 Ein Ergebnis dieser Arbeit ist, dass das Netzwerk nach dem Trainings-Prozess (mit 40 Epochen) mit 51%ger Wahrscheinlichkeit die richtige 7. Nachkommastelle auf dem Trainings-Set vorhersagt. Bei genauerer Überlegung ist dies jedoch nicht verwunderlich, denn umso größer ein Netzwerk, desto mehr Möglichkeiten bestehen, dass sich die Parameter des Netzwerks beim Training gerade so anpassen, dass sie das gesamte Trainings-Set beschreiben können. So sollte, wenn ein besonders großes (bzw. tiefes) Netzwerk mit vielen Neuronen, Ebenen und Inputs genutzt wird, es möglich sein, auf dem Trainings-Set weit über 50% richtige vorhersagen zu erreichen. Dies sagt allerdings nicht viel über die Zufälligkeit der Folge aus, da die eigentlich interessanten Vorhersagen auf einem Daten-Set relevant sind, das nicht für den Trainingsprozess genutzt wurde, da an ihm erkannt werden kann, ob das gelernte verallgemeinert werden kann. Ist dies nicht der Fall spricht man, wie bereits zuvor beschrieben, davon dass das Trainings-Set überfitted wurde. In der Arbeit wird auf einem Test-Set 'T1' der Nachkommastellen 100,000-1,000,007 durchschnittlich 50.1% der Vorhersagen richtig getroffen und auf einem Test-Set 'T2' der Nachkommastellen 999,999-9,999,006 ebenso nur 50.03% richtige vorhersagen getroffen. Dies ist jedoch immernoch erstaunlich, da wie bereits zu Beginn erwähnt bei einer völlig zufälligen Zahlenfolge durchschnittlich nur 50% richtige Vorhersagen getroffen werden können. Die Abweichung hier könnte allerdings im Prinzip auch durch eine zu kleine Anzahl an Testbeispielen erklärt werden und gerade wieder Zufälligerweise über 50% auf allen getesten Daten erreicht wurden.
 
-### Test des Netzwerks aus der Arbeit
+### <center><span style="color:rgb(95,67,37)">Test des Netzwerks aus der Arbeit</span></center>
 Um die zuvor beschriebene Ergebnisse zu Verstehen bzw. zu Bestätigen, wurde versucht die Ergebnisse aus der Arbeit zu reproduzieren. Hierzu wurde die Programmiersprache [Python](https://www.python.org/) und die Bibliothek [Pytorch](https://pytorch.org/) verwendet, welche eine relativ einfache Implementation von Netzwerken und des Trainings ermöglicht.
 Zunächst wurden die ersten [1 Milliarde Nachkommastellen von π](https://stuff.mit.edu/afs/sipb/contrib/pi/) heruntergeladen, in ein passendes Format gebracht und in die von der Arbeit verwendeten Trainings und Test-Sets T1 und T2 aufgeteilt.
 
@@ -85,8 +85,8 @@ Trainings-Set | 0.5112 | 0.001
 
 Die Ergebnisse sind erstaunlich, es ergibt sich selbst für den 5-sigma Bereich ein Erwartungswert von über 50%. Absolut betrachtet liegt die Abweichung zu 50% zwar nur in der Größenordnung 0.01% Prozent, jedoch ist dieses Ergebnis für ein so einfaches und kleines Netzwerk, sowie die geringe Anzahl an Trainingsdaten und Inputs sehr überraschend. Die Ergebnisse der Arbeit konnten also bestätigt werden.
 
-### Test anderer Netzwerk-Strukturen
-#### Nutzung von mehr Neuronen
+### <center><span style="color:rgb(95,67,37)">Test anderer Netzwerk-Strukturen</span></center>
+#### <center><span style="color:rgb(95,67,37)">Nutzung von mehr Neuronen</span></center>
 Aufgrund der erstaunlich guten Ergebnisse des vorherigen Experiments mit einem relativ kleinen und einfachen Netzwerk sollen nun weitere Netzwerke getestet werden.
 
 Hierzu wurde zunächst ein Netzwerk mit wieder 6 Inputs und 3 Ebenen, jedoch dieses mal [6,120,80,2] Neuronen in den jeweiligen Ebenen genutzt. Der Trainingsprozess wurde wie zuvor 100 mal ausgeführt. Die folgenden Anteile an richtigen Vorhersagen ergaben sich:
@@ -101,7 +101,7 @@ Trotz der erhöhten Anzahl an Neuronen scheint sich an den Ergebnissen auf den T
 
 Mit 6 Inputs sollte es theoretisch 720 verschiedene Möglichkeiten an Inputs geben. Diese sollten bereits mit einem weitaus kleineren Netzwerk leicht beschrieben werden können, deshalb ist bei einer weiteren Vergrößerung des Netzwerks nur eine leicht bessere Rate auf den Trainings-Set bei gleicher Input-Anzahl zu erwarten. 
 
-#### Nutzung von mehr Ebenen und Neuronen
+#### <center><span style="color:rgb(95,67,37)">Nutzung von mehr Ebenen und Neuronen</span></center>
 Nun wurde ein deutlich tieferes Netzwerk mit 10 Ebenen, 6 Inputs und der Struktur [6,32,64,124,248,248,124,64,32,16,2] genutzt. Zusätzlich wurde in diesem Netzwerk aller 2 Ebenen eine ['batch-normalization'](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) Ebene genutzt. Diese Ebenen werden genutzt um die Aktivierungen tief im Netzwerk zu begrenzen. Dies ist nötig, da es gerade in tiefen Netzwerken dazu kommt, dass eine kleine Änderung des Inputs zu extrem großen Änderungen des Outputs führen können. Um dies etwas abzuschwächen und so das Problem der 'explodierenden Gradienten' zu unterbinden, wurde diese Ebene im folgenden genutzt.<!---, sowie beim Trainieren eine ['Dropout'-Ebene](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) genutzt. --> Ansonsten wurde wie zuvor das Netzwerk trainiert, jedoch nun eine batch-Größe von 40,000 verwendet, um das Training zu Beschleunigen. Folgendes ergab sich:
 
 Daten-Set | Mittelwert | 5-sigma Vertrauensbereich
@@ -115,7 +115,7 @@ Das Netzwerk liefert schlechtere Ergebnisse auf den Test-Sets als die Netzwerke 
 Ein weiteres interessantes Verhalten ist die scheinbare Abnahme der Rate an richtigen Vorhersagen mit größerer Entfernung der Nachkommastellen zum Trainings-Set. Dies trat wie in den Tabellen zu sehen in allen 3 bisher getesteten Netzwerken auf.
 
 
-#### Nutzung von mehr Ebenen, Neuronen sowie mehr Inputs und Trainingsbeispielen
+#### <center><span style="color:rgb(95,67,37)">Nutzung von mehr Ebenen, Neuronen sowie mehr Inputs und Trainingsbeispielen</span></center>
 Die Idee ist nun die Anzahl an Inputs zu erhöhen, damit eventuelle weitreichweitige Korrelationen vom Netzwerk erkannt werden könnten und so sich bessere Ergebnisse einstellen sollten. Zudem werden aufgrund der erhöhten Komplexität des Models nun mehr Trainingsbeispiele genutzt (1,000,000). Weiterhin wird nun beim Training das Trainings-Set in ein tatsächliches Trainings-Set (erste 800,000) und ein 'Vergleichs-Set' (800,000 bis 1,000,000) aufgeteilt, was genutzt werden soll, um Über-fitten zu erkennen. Im Fall von über-fitten sollte der Anteil von richtigen Vorhersagen auf dem verlgeichs-Set wieder sinken. Im weiteren wurde das selbe Netzwerk wie im letzten test, jedoch mit 100 Digits als Inputs genutzt ([100,32,64,124,248,248,124,64,32,16,2]). Weiterhin wurde 100 Epochen trainiert und die Performance auf dem Training und Vergleichs-Set aufgenommen. Als Test-Sets wurden jeweils Sets aus 100,000 Digits von 0 bis zur 25 millionsten Nachkommastelle verwendet. Set 1 beschreibt also die Digits 0 100,000.
 Das Netzwerk wurde dieses mal nur 3 mal von grundauf neu Trainiert, da nur eine Epoche knapp 7 Sekunden benötigte. Wie zuvor vermutet konnten auf dem Trainingsset weitaus höhere Raten erreicht werden, wie in den folgenden Tests dargestellt ist. Jedoch kann aufgrund der geringen Anzahl keine Unsicherheit angegeben werden und die Rate auf den Testsets konnte auch nicht verbessert werden.
 
@@ -128,13 +128,13 @@ Das beste Netzwerk erreichte sogar eine Rate von mehr als 56% auf dem reinen Tes
 
 
 
-## Zusammenfassung der Ergebnisse sowie kurze Diskussion
+## <center><span style="color:rgb(95,67,37)">Zusammenfassung der Ergebnisse sowie kurze Diskussion</span></center>
 Im Allgemeinen ergeben sich auf den Testsets in dem letzten Test um ca. eine Größenordnung geringere Abweichungen zu 50% als in den Test zuvor. Dies könnte an der fast doppelt so großen Anzahl an Test-Digits liegen. Es wirkt als würde sich der Mittelwert der Vorhersagen immer weiter 50% annähern je mehr Digits zum Testen genutzt werden. Dies legt die Vermutung nahe, dass es sich ebend doch um reinen Zufall handelt, denn dieser kann desto  besser überprüft werden, desto längere Zahlenfolgen gestet werden. Dafür spricht auch die relative Gleichverteilung der richtigen vorhersagen. Dem entgegen spricht allerdings, dass die Rate der Vorhersagen nahe am Trainingsset doch deutlich größer als 50% (Im Vergleich zu den anderen Abweichungen) ist und das Netzwerk eventuell nur einen Zusammenhang für einen bestimmten Bereich von Digits erkannt hat. Deshalb würden die Vorhersagen schlechter werden, je weiter weg die Digits gewählt werden, da der eventuell gelernte Zusamenhang immer weniger Einfluss hat oder nicht genau genug erkannt wurde.
 
 Zusammenfassend lässt sich also sagen, dass die Vermutung zu Beginn, dass mithilfe eines größeren Netzwerkes weitaus höhere Raten auf dem Trainingsset erreicht werden können zutrifft. Zudem konnten die Ergebnisse der Arbeit reproduziert und mit weiteren Tests sogar bestätigt werden.
 
 <!--- ### Nutzung eines einfachen 'Recurrent'-Netzwerks-->
 
-## Ideen für weiterführende Tests
+## <center><span style="color:rgb(95,67,37)">Ideen für weiterführende Tests</span></center>
 Die Idee des Tests von Zufallsfolgen mithilfe von machine learning könnte auf andere, besonders Pseudo Zufallszahlen, ausgeweitet werden. In diesen muss es einen Zusammenhang geben der von dem Netzwerk erkannt werden könnte und theoretisch auch sollte. Weiterhin könnten passendere Netzwerk Strukturen für sequenzielle Daten wie recurrent-networks genutzt werden, die eventuell bessere Vorhersagen treffen könnten.
 

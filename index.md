@@ -30,9 +30,9 @@ zu finden.
 
 [420-Experiment](420Experiment/side.md)
 
-### Lineare Kongruenzgeneratoren
+### [Lineare Kongruenzgeneratoren (auf Englisch)](LCG/lcg.md)
 
-[Lineare Kongruenzgeneratoren](LCG/lcg.md)
+Lineare Kongruenzgeneratoren erzeugen Pseudozufallszahlen mit Hilfe einer sehr einfachen mathematischen Formel: der Gleichung für eine Gerade. Die Ergebnisse dieser Gleichung werden durch eine Modulo Operation auf einen Zahlenbereich beschränkt. Pseudozufallszahlen, die so erzeugt werden, hängen damit also nur von sehr wenigen Parametern ab. Durch diese geringe Komplexität ist die richtige Wahl der Parameter essenziell. Wir führen einige statistische Tests und einen speziellen Test für Lineare Kongruenzgeneratoren ein, um die Qualität von erzeugten Pseudozufallszahlen zu bewerten und werfen einen Blick auf Lineare Kongruenzgeneratoren, die (früher) gerne benutzt werden (oder wurden).
 
 ### [Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken:](ML_approach/pi_test_with_nn.md)
 Maschinelles lernen und besonders Neuronale Netzwerke erreichen in vielen Anwendungen immer wieder erstaunlich gute Ergebnisse. In diesem Projekt soll mithilfe eines Neuronalen Netzwerks die Nachkommastellen der Zahl Pi vorhergesagt werden, um gegebenenfalls vorhadene Muster zu erkennen. Dieses Verfahren könnte auch auf andere Zufallszahlen, besonders Pseudo-Zufallszahlen, erweitert werden, um z.B. deren Güte zu überprüfen.

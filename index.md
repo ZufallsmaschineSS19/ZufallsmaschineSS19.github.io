@@ -26,37 +26,15 @@ zu finden.
 
 ## Projekte SoSe 2019 :
 
-### Laser-basierter Zufallszahlengenerator
-
-[420-Experiment](420Experiment/side.md)
-
-### [Lineare Kongruenzgeneratoren (auf Englisch)](LCG/lcg.md)
+### [Lineare Kongruenzgeneratoren (Englisch)](LCG/lcg.md)
 
 Lineare Kongruenzgeneratoren erzeugen Pseudozufallszahlen mit Hilfe einer sehr einfachen mathematischen Formel: der Gleichung für eine Gerade. Die Ergebnisse dieser Gleichung werden durch eine Modulo Operation auf einen Zahlenbereich beschränkt. Pseudozufallszahlen, die so erzeugt werden, hängen damit also nur von sehr wenigen Parametern ab. Durch diese geringe Komplexität ist die richtige Wahl der Parameter essenziell. Wir führen einige statistische Tests und einen speziellen Test für Lineare Kongruenzgeneratoren ein, um die Qualität von damit erzeugten Pseudozufallszahlen zu bewerten und werfen einen Blick auf Lineare Kongruenzgeneratoren, die (früher) gerne benutzt werden (oder wurden).
 
 ### [Untersuchung der Zufälligkeit von Pi mithilfe von Neuronalen Netzwerken:](ML_approach/pi_test_with_nn.md)
 Maschinelles lernen und besonders Neuronale Netzwerke erreichen in vielen Anwendungen immer wieder erstaunlich gute Ergebnisse. In diesem Projekt soll mithilfe eines Neuronalen Netzwerks die Nachkommastellen der Zahl Pi vorhergesagt werden, um gegebenenfalls vorhadene Muster zu erkennen. Dieses Verfahren könnte auch auf andere Zufallszahlen, besonders Pseudo-Zufallszahlen, erweitert werden, um z.B. deren Güte zu überprüfen.
 
-### Die Philosophie des Zufalls
+### Die Philosophie des Zufalls: ["Das Universum: willkürlich - zufällig - chaotisch"](sarah/sarah2.md)
 
-[Das Universum: willkürlich - zufällig - chaotisch](sarah/sarah2.md)
+### Laser-basierter Zufallszahlengenerator: [Das 420-Experiment](420Experiment/side.md)
 
-### ZenerZufall
-
-[Tims und Gertruds Projekt](ZehnerZufall/Baustelle.md)
-
-## Website - Tests & Hinweise
-
-Änderungen in index.md brauchen einige Minuten um auch auf der Website zu erscheinen.
-
-Einige git-infos sind [hier](https://github.com/ZufallsmaschineSS19/ZufallsmaschineSS19.github.io/blob/master/gitInfos/git_terminal.md) zu sehen.
-
-Anleitung zum editieren dieser Dateien [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Test ob LaTeX sich hier anschalten laesst: $$r = \sqrt(r)$$
-
-weiterer Test
-
-![fomel0](images/CodeCogsEqn.gif)
-
-Online-Tool, mit dem ihr Formeln in Bilder umwandeln könnt: [iTex2lmg](http://www.sciweavers.org/free-online-latex-equation-editor)
+### Elektronischer Zufallszahlengenerator: [Das Arduino-Experiment](ZehnerZufall/Baustelle.md)

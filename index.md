@@ -1,14 +1,18 @@
 {% include mathjax.html %}
 
-# Q-Tutorium
+### Q-Tutorium:
 
 # Die Zufallsmaschine (SoSe 2019)
+
+---
 
 ## Projektbeschreibung
 
 Im Gegensatz zu üblichen Lehrveranstaltungen werden in dieser nicht nur
 Forschungsthemen behandelt oder diskutiert, sondern selbstständig der
-gesamte Forschungsprozess durchlaufen. Es werden von den Studierenden eigenständig Forschungsfragen formuliert und Schwerpunkte gesetzt. Es soll sich unter Anleitung der Tutoren (Paul Winter & Richard Kullmann) Literatur selbst gesucht und in Gruppen ein selbst ausgesuchtes Projekt gestaltet und für Dritte aufbereitet werden.
+gesamte Forschungsprozess durchlaufen. Es werden von den Studierenden eigenständig Forschungsfragen formuliert und Schwerpunkte gesetzt. Es soll sich unter Anleitung der Tutoren (Paul Winter & Richard Kullmann) Literatur selbst gesucht und ggf. in Gruppen ein selbst ausgesuchtes Projekt gestaltet und für Dritte aufbereitet werden.
+
+---
 
 Das Abschlussprojekt des **WiSe 2018/19** wurde auf der Langen Nacht der
 Wissenschaften [(LNdW-Website)](https://www.langenachtderwissenschaften.de/)
@@ -17,14 +21,14 @@ Experimente kannst du [**hier**](projekt_WiSe1819/LNdW.md) finden.
 
 ---
 
-Diese Website soll die Ergebnisse des Tutoriums des **SoSe 2019** präsentieren.
+Die Website [ZufallsmaschineSS19.github.io](ZufallsmaschineSS19.github.io) soll die Ergebnisse des Tutoriums des **SoSe 2019** präsentieren.
 Die Programme und Bilder, sowie der Quellcode für diese
 Website sind auf
 [Github](https://github.com/ZufallsmaschineSS19/ZufallsmaschineSS19.github.io)
 zu finden.
 
 
-## Projekte SoSe 2019 :
+## Forschungsprojekte SoSe 2019 :
 
 ### [Lineare Kongruenzgeneratoren (Englisch)](LCG/lcg.md)
 

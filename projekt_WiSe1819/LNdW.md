@@ -31,9 +31,7 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 [Video des Trippel-Pendels](spiele/Video_TrippelPendel_1.mp4)
 
-[![YouTube Video des Tripel-Pendels](http://img.youtube.com/vi/6KxWe_F-Zdk&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=6KxWe_F-Zdk&feature=youtu.be "Tripel-Pendel")
-
-[YouTube Video des Tripel-Pendels](http://www.youtube.com/watch?v=6KxWe_F-Zdk&feature=youtu.be "Tripel-Pendel")
+[![YouTube Video des Tripel-Pendels](http://img.youtube.com/vi/6KxWe_F-Zdk/0.jpg)](http://www.youtube.com/watch?v=6KxWe_F-Zdk "Tripel-Pendel")
 
 ### Mitmachspiele
 

@@ -46,7 +46,7 @@ Maschinelles lernen und besonders Neuronale Netzwerke erreichen in vielen Anwend
 
 ### [Die Philosophie des Zufalls: "Das Universum: willkürlich - zufällig - chaotisch"](sarah/sarah2.md)
 
-Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Wir wollen uns mit den Begriffen auseinander setzen, mithilfe des Buches "Der Zufall, das Universum und Du" von Florian Aigner die Bedeutung des Zufalls für das Universum diskutieren und uns der Frage widmen, ob Zufall letztendlich nur in unseren Köpfen entsteht.
+Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um im umgangssprachlichen Sinne das Universum zu beschreiben. Doch was genau beschreiben diese Begriffe eigentlich? Was bedeuten sie? Wir wollen uns mit den Begriffen auseinander setzen, mithilfe des Buches "Der Zufall, das Universum und du" von Florian Aigner die Bedeutung des Zufalls für das Universum diskutieren und uns der Frage widmen, ob Zufall letztendlich nur in unseren Köpfen entsteht.
 
 ---
 

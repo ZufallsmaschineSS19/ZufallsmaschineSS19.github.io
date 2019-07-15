@@ -1,6 +1,6 @@
-Sarah Pestkowski
-Q-Tutorium: Die Zufalsmaschine
-Sommersemester 2019
+Sarah Pestkowski  <br>
+Q-Tutorium: Die Zufalsmaschine  <br>
+Sommersemester 2019  <br>
   <br>
 # <center><span style="color:rgb(235,78,0)">Das Universum</span></center>
 # <center><span style="color:rgb(235,78,0)">willkürlich - zufällig - chaotisch</span></center>

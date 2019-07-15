@@ -1,4 +1,4 @@
-![Universum](./Universum.jpg)
+![Universum](Universum.jpg)
 
 Sarah Pestkowski  <br>
 Q-Tutorium: Die Zufalsmaschine  <br>

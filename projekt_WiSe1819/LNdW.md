@@ -29,7 +29,7 @@ nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere
 
 ### Das Tripel-Pendel alias *"Chaos-Pendel"*
 
-[Video des Trippel-Pendels]
+YouTube-Video des Tripel-Pendels
 
 [![YouTube Video des Tripel-Pendels](http://img.youtube.com/vi/6KxWe_F-Zdk/1.jpg)](http://www.youtube.com/watch?v=6KxWe_F-Zdk "Tripel-Pendel")
 

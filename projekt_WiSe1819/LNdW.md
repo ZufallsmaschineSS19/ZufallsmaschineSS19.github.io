@@ -7,7 +7,7 @@
 Zur Langen Nacht der Wissenschaften 2019 wurde unter dem
 Veranstaltungsnamen "Die Zufallsmaschine" eine Ausstellung der
 Abschlussprojekte des Wintersemesters 2018/19 durchgeführt. Dabei wurden
-nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere Speicherkapazität brauchen und nicht sofort im Browser angezeigt werden - lade dazu die PDF erst runter um es dir schneller anzuschauen.
+nachstehende Poster präsentiert. Beachte, dass die A0 Poster zum Teil größere Speicherkapazität brauchen und nicht sofort im Browser angezeigt werden - lade zuerst die PDF herunter, um es dir schneller anzuschauen.
 
 ---
 
@@ -44,10 +44,10 @@ erzeugten Zufallszahlen per Hand die Zahl **Pi** !
 
 ---
 
-Die Caesar-Verschlüsselng ist eine der ältesten und einfachsten Methoden
-Nachrichten zu verschlüssel. Das Problem: Man kann die orginal
-Caesar-Verschlüsselung recht einfach knacken! Versuche den einen
-Schlüssel zu finden der den ganzen Satz wieder lesbar macht:
+Die Caesar-Verschlüsselung ist eine der ältesten und einfachsten Methoden,
+Nachrichten zu verschlüsseln. Das Problem: Man kann die originale
+Caesar-Verschlüsselung recht einfach knacken! Versuche, den einen
+Schlüssel zu finden, der den ganzen Satz wieder lesbar macht:
 
 [Caesar-Raetsel](spiele/Caesar_Raetsel.pdf)
 
@@ -72,10 +72,10 @@ viel Zahl von Spionen genutzt.
 
 ---
 
-Wie findet man raus, ob ein Würfel gezinkt ist. Jaja man kann ihn sich
+Wie findet man heraus, ob ein Würfel gezinkt ist. Jaja man kann ihn sich
 anschauen, das Trägheitsmoment betrachten und feststellen: "Ja ne - er
-taumelt.. ein nicht-gezinkter Würfel taumelt nicht.", aber was ist wenn
-du nur die Zahlen gesagt bekommst oder dein gegenüber den Würffel nicht
+taumelt.. ein nicht-gezinkter Würfel taumelt nicht.", aber was ist, wenn
+du nur die Zahlen gesagt bekommst oder dein gegenüber den Würfel nicht
 rausrücken will...
 
 [Würfelstatistik-Anleitung](spiele/Wuerfelstatistik_Anleitung.pdf)
@@ -91,7 +91,7 @@ politisch ein Thema ist.
 [Poster über Korrelationen und
 Scheinkorrelationen](Poster_Korrelation.pdf)
 
-[Korrelationsquiz] - comming soon
+[Korrelationsquiz] - coming soon
 
 ---
 

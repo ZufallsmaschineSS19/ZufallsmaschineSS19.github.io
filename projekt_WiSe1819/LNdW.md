@@ -91,7 +91,9 @@ politisch ein Thema ist.
 [Poster über Korrelationen und
 Scheinkorrelationen](Poster_Korrelation.pdf)
 
-[Korrelationsquiz] - coming soon
+[Korrelationsquiz](Korrelationsquiz.pdf)
+
+[Lösungen Korrelationsquiz](Lösungen Korrelationsquiz.pdf)
 
 ---
 

@@ -84,8 +84,8 @@ rausrücken will...
 
 ---
 
-Was?! - Korrelation?! - hab ich noch nie gehört.. Das ist Zufall, dass
- neue Hitzerekorde gemessen werden, genau dann wenn das Klima
+Was?! - Korrelation?! - hab ich noch nie gehört... Es ist Zufall, dass
+ neue Hitzerekorde gemessen werden, genau dann, wenn das Klima
 politisch ein Thema ist.
 
 [Poster über Korrelationen und

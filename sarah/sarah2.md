@@ -1,5 +1,4 @@
 <center>Sarah Pestkowski   -   Q-Tutorium: Die Zufalsmaschine  -   Sommersemester 2019</center>  <br>
-  <br>
 
 ![Universum](Universum.jpg)
 

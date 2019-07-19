@@ -5,20 +5,3 @@ Unter den beiden Möglichkeiten der experimentellen Bestimmung von Zufallszaheln
 Diese arbeitet damit, dass aufgrund der schweren Vorhersgbarkeit von physikalischen Anfangsbedingungen, in einem System Rauschen entsteht das wiederun in Zufallszahlen umgewandelt werden kann.
 
 Hierzu haben wir einen Aufbau entwickelt der mittels einer Zenerdiode als Rauschquelle, einem dazwischen geschalteten Verstärker und einem Arduino als Mikrokontroller:
-
-
-
-
-Test
-Tim's Test
-
-###### Gertruds Test 
-
-1. Hallo
-  2. Zweitens
-
-**fett**
-
-*Sooo*
-
-~~Nein~~

@@ -33,6 +33,10 @@ YouTube-Video des Tripel-Pendels
 
 [![YouTube Video des Tripel-Pendels](http://img.youtube.com/vi/6KxWe_F-Zdk/1.jpg)](http://www.youtube.com/watch?v=6KxWe_F-Zdk "Tripel-Pendel")
 
+Auf folgender Seite befindet sich eine ausführliche Beschreibung der Theorie sowie einer Simulation eines Trippelpendels. Diese Seite wurde nicht im Rahmen unseres Q-Tutoriums erstellt, sie dient lediglich als Referenz:
+
+[http://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/](http://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/)
+
 ### Mitmachspiele
 
 ---

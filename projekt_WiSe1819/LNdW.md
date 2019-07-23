@@ -68,9 +68,15 @@ viel Zahl von Spionen genutzt.
 
 [OTP-Musterzettel](spiele/OTP_Hilfszettel.pdf)
 
+Folgende Bilder zeigenen einige historische Verwirklichungen, wie OTPs verwendet werden konnten. Vielen Dank für die Bereitstellung der Bilder und einer ausführlichen Erklärung an Jens Raeder und seinem [Museum](http://www.nva-harnekop.de/).
+
 ![Historisches OTP](OTP_Spion.jpg)
 
+Ein Spion konnte 100% sicher mit seinem Geheimdienst kommunizieren indem er und die Basis den selben Satz an Zufallszahlen verwendeten. Dazu wurde eine (hier zu sehen) große Ausgabe und eine Briefmarken große Version eines Buches mit Zufallszahlen erstellt. Diese bestanden aus wasserlöslichem Papier und konnten so in Gefahrensituationen leicht vernichtet werden.
+
 ![OPT als Lochband](OTP_Lochband.jpg)
+
+Automatisiert konnte man via OTP kommunizieren, indem man ein Fernschreiber verwendet. Hier zu sehen ist ein Verschlüsselungsmodul um Nachrichten mit Zufallszahlen "gespeichert" im weißen Lochband zu verschlüsseln und per Fernschreiber zu versenden. Die unverschlüsselte Nachrricht ist auf dem gelben Lochband gespeichert. Durch verwendung einer Kasette (hier nicht mehr vorhanden) konnte man sicherstellen, dass die Zufallszahlen nur einmal verwendet werden konnten.
 
 ![OTP-Fernschreiber](OTP_Fernschreiber.jpg)
 

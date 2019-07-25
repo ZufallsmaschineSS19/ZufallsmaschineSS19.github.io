@@ -76,9 +76,14 @@ im Alphabet verschoben:
  So wird aus der Nachricht "Hallo Welt" dann  "KDOOR ZHOW".
  Entschlüsseln funktioniert nun ganz einfach, indem man den den Schlüssel einfach rückwärts anwendet, also A <-3- D
 
+
+Versuch dein Glück und schau ob du es schaffst unser Rätsel zu knacken !
+
 [Caesar-Raetsel](spiele/Caesar_Raetsel.pdf)
 
 [Lösung des Caesar-Raetsels](spiele/Caesar_Loesung.pdf)
+
+[Tipps] - comming soon
 
 ---
 

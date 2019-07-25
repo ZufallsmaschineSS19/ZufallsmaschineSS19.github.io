@@ -50,8 +50,31 @@ erzeugten Zufallszahlen per Hand die Zahl **Pi** !
 
 Die Caesar-Verschlüsselung ist eine der ältesten und einfachsten Methoden,
 Nachrichten zu verschlüsseln. Das Problem: Man kann die originale
-Caesar-Verschlüsselung recht einfach knacken! Versuche, den einen
-Schlüssel zu finden, der den ganzen Satz wieder lesbar macht:
+Caesar-Verschlüsselung recht einfach knacken! Warum? Wie funktioniert die 
+Ceasar-Verschlüsselung? 
+
+Man startet mit einer Nachricht, zum Beispiel "Hallo Welt". Nun denkt man sich 
+einen Schlüssel aus, zum Beispiel "3". Der Schlüssel kann an sich jede beliebige 
+ganze Zahl sein, allerdings bringen hier größere Zahlen kein höheren nutzten, denn
+bei der Entschlüsselung reicht es den Modulus des Schlüssels durch die Anzahl der
+Zeichen zu kennen. Bei 26 Buchstaben (hier mal die Satz- und Leerzeichen unverschlüsselt)
+ergibt also 3,29 und 55  (3 = mod(29,26) = mod(55,26)) das selbe Entschlüsselungsverfahren.
+
+Ok! 
+
+Du hast nun also eine Nachricht und ein Schlüssel. Nun wird jeder Buchstabe um den Schlüssel
+im Alphabet verschoben:
+
+ -  A -3-> D
+ 
+ -  B -3-> E
+ 
+ -  C -3-> F
+ 
+ -  H -3-> K
+ 
+ So wird aus der Nachricht "Hallo Welt" dann  "KDOOR ZHOW".
+ Entschlüsseln funktioniert nun ganz einfach, indem man den den Schlüssel einfach rückwärts anwendet, also A <-3- D
 
 [Caesar-Raetsel](spiele/Caesar_Raetsel.pdf)
 

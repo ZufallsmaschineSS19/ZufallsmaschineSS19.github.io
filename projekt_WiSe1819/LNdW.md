@@ -48,7 +48,7 @@ erzeugten Zufallszahlen per Hand die Zahl **Pi** !
 
 ---
 
-Die Caesar-Verschlüsselung ist eine der ältesten und einfachsten Methoden,
+Die **Caesar-Verschlüsselung** ist eine der ältesten und einfachsten Methoden,
 Nachrichten zu verschlüsseln. Das Problem: Man kann die originale
 Caesar-Verschlüsselung recht einfach knacken! Warum? Wie funktioniert die 
 Ceasar-Verschlüsselung? 
@@ -105,7 +105,7 @@ Automatisiert konnte man via OTP kommunizieren, indem man ein Fernschreiber verw
 
 ---
 
-Wie findet man heraus, ob ein Würfel gezinkt ist. Jaja man kann ihn sich
+Wie findet man heraus, ob ein **Würfel** gezinkt ist. Jaja man kann ihn sich
 anschauen, das Trägheitsmoment betrachten und feststellen: "Ja ne - er
 taumelt.. ein nicht-gezinkter Würfel taumelt nicht.", aber was ist, wenn
 du nur die Zahlen gesagt bekommst oder dein gegenüber den Würfel nicht
@@ -117,7 +117,7 @@ rausrücken will...
 
 ---
 
-Was?! - Korrelation?! - hab ich noch nie gehört... Es ist Zufall, dass
+Was?! - **Korrelation**?! - hab ich noch nie gehört... Es ist Zufall, dass
  neue Hitzerekorde gemessen werden, genau dann, wenn das Klima
 politisch ein Thema ist.
 

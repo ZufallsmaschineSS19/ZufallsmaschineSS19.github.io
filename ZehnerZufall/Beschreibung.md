@@ -16,7 +16,12 @@ In Original sieht das dann so aus:
 
 ## Durchfürung
 
-### Erster Zufall?
+## Messen des Rauschen des Arduino ADC
+
+Da das Rauschen des Analog-Digital-Converters (ab jetzt ADC) anscheinend stärker als das Rauschen der Zenerdiode ist, bleibt uns nichts anderes übrig als dieses zu messen und zu schauen, wie zufällig es sich verhält. \
+Zuerst betrachten wir den zeitlichen Verlauf des Signals direkt, was mit dem Serial-Plotter, des Arduino-Programs sehr leicht ist:
+TODO: Bild des signals
+Die x-Achse des Plots ist die Nummer des gesendeten Bytes und die y-Achse der Wert des Bytes. Wie man sieht schwankt der Wert nur um 1 bit nach oben und unten, und das relativ regelmäßig. Um dies zu quantifizieren könnte man eine Frequenzanalyse mittels Fouriertransformation machen, was hier aber der einfachheit halber ausgelassen wurde, außerdem haben wir uns davon keine wichtigen Informationen erhofft. Stattdessen haben wir ein Programm geschrieben, welches misst, wie lange das Signal braucht um von einem Wert zu einem anderen zu wechseln.
 
 ### Testen der Erhaltenen Zahlen
 

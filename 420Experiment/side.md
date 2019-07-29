@@ -1,9 +1,5 @@
 # Thermal attenuation noise of optical power from a 420nm light source in hot <sup>85,87</sup>Rb vapor.
 
-QTutorium: Zufallszahlen<br>
-Sommersemester 2019<br>
-by: Julien Kluge
-
 ![Photo of the setup](SetupPhoto.jpg "Photo of the setup")
 
 ___
@@ -12,7 +8,7 @@ The project mainly uses an experiment which was build up during my master
 thesis which will be finished in a few weeks. The experiment aims to do
 doppler free absorption spectroscopy in the 6**P** manifold. This is possible
 due to the recent advancements in GaN diode laser technology<sup>[1-3]</sup>,
-for which the 2016 Nobel price was awarded<sup>[4]</sup> and allows
+for which the 2014 Nobel price was awarded<sup>[4]</sup> and allows
 for a compact laser at 420.3 nm in a Littrow external cavity diode laser
 design (ECDL). This is beneficial for us since the ECDL inhibits a very
 low linewidth (<150 kHz) and therefore does not perturb our modulated

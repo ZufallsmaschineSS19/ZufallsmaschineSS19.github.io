@@ -52,6 +52,8 @@ Willkür, Zufall und Chaos - diese drei Begriffe eignen sich sehr gut dazu, um i
 
 ### Laser-basierter Zufallszahlengenerator: [Das 420-Experiment](420Experiment/side.md)
 
+Wenn licht durch Gase tritt, kann die Intensität des Lichts durch verschiedene Prozesse gedämpft werden. Sei es nun Absorption, Beugung oder Ähnliches. Diese Prozesse sind im Allgemeinen willkürlich und könnten so eventuell benutzt werden, um Zufallszahlen zu erzeugen. In diesem Experiment widmen wir uns genau dieser Frage. Wir schicken 420 nm Laserlicht durch eine Kammer mit heißem Rubidium Dampf und versuchen herauszufinden, ob man diese Zufallsprozesse nachweisen kann und ob man daraus hochqualitative Zufallszahlen erzeugen kann.
+
 ---
 
 ### Elektronischer Zufallszahlengenerator: [Das Arduino-Experiment](ZehnerZufall/Baustelle.md)

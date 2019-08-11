@@ -2,19 +2,21 @@
 
 ## Ideenfindung
 Zufallszahlen spielen im Alltag, in der Wissenschaft und der Informatik eine immer größer werdende Rolle. Da im allg. die vom Computer erzeugten Pseudo-Zufallszahlen nicht wirklich zufällig sind und damit vorhersagbar, wollten wir uns damit beschäftigen anhand eines physikalischen Aufbaus echte Zufallszahlen zu erzeugen.\
-Unter den beiden Möglichkeiten der experimentellen Bestimmung von Zufallszaheln: der quantenmechanischen und der mittels Rauschen, haben wir uns für letztere entschieden.\
+Unter den beiden Möglichkeiten der experimentellen Bestimmung von Zufallszahlen: der quantenmechanischen und der mittels Rauschen, haben wir uns für letztere entschieden.\
 Diese arbeitet damit, dass aufgrund der schweren Vorhersgbarkeit von physikalischen Anfangsbedingungen, in einem System Rauschen entsteht das wiederun in Zufallszahlen umgewandelt werden kann.\
 Da unsere Exprimentellen Möglichkeiten diesbezüglich sehr eingeschränkt waren und wir keinen zugang zu Hitech Instrumenten hatten, beschlossen wir einen möglichst einfachen, zu Hause umsetztbaren Aufbau umzusetzten.
 
 ## Versuchsaufbau
 
-Mittels einer Zenerdiode als Rauschquelle, einem dazwischen geschalteten Verstärker und einem Arduino als Mikrokontroller haben wir dies mit dieser Schaltung umgesetzt.
+Eine häufig benutzte Methode um Rauschen zu erzeugen sind Zener-Dioden, die man in der Durchbruchrichtung betreibt. Wie eine normale Diode lässt eine Zehner-Diode nur Strom in einer Richtung durch und in die andere (Sperrrichtung) wird der Strom blockiert. Das passiert aber nur bis zu einer bestimmten Spannung, der Durchbruchspannung, ab der die Diode auch in dieser Richtung leitet. Das sollte dann Spannungsrauschen durch den Avalanche-Effekt produzieren. **reference** \
+Nun wollen wir dieses Rauschen mit einem Arduino-Uno messen. Der Arduino-Uno ist ein Mikrocontroller, integriert auf einem Board mit Digitalen Ein- und Ausgängen sowie analogen Eingängen. Einer dieser analogen Eingänge soll nun benutzt werden, um die zeitabhängige Spannung an der Diode zu messen. Die aufgebaute Schaltung sah im Prinzip wie in diesem Aufbau aus https://www.maximintegrated.com/en/app-notes/index.mvp/id/3469 **kann man vielleicht noch schöner einbinden**. Bei uns konnten wir leider nur Spannungen bis zu 9V an der Diode testen, da kein einstellbares Netzteil zur Verfügung stand und es wurden Operational-Amplifier (Op-Amps) anstatt der Low-Noise-Amplifier bei dem Aufbau auf der Webseite verwendet, da es leichter war an Op-Amps zu kommen.
+Es Zener-Dioden mit 3.3V, 4.7V, und 7.5V getestet, da in die angelegte Spannung höher sein muss als die Durchbruchspannung der Diode, um den Avalanche-Effekt herbeizuführen. \
+Der analoge Eingang des Arduino hat eine Auflösung von 10 Bit, also sind 1024 verschiedene Werte messbar und es können Spannungen von 0 bis 5 Volt gemessen werden, was zu einer Spannungsauflösung von ca. 5mV führt. Das Spannungsrauschen der Diode sollte also eine Amplitude von mehr als 5mV haben.
 
-Dazu haben wir benötigt:
+## Durchführung
 
-In Original sieht das dann so aus:
-
-## Durchfürung
+Bei allen Messungen wurde ein Rauschen von ca. 10mV gemessen, was nicht ideal ist, da bei einer kleinen Amplitude nur ein kleiner Teil des Signals als Rauschen verwendet werden kann (das letzte Bit, bei einem Bit Rauschen). Es stellt sich aber heraus, dass dieses Rauschen allein von dem Analog-Digital-Converter des Arduino kommt, da ein sehr ähnliches Rauschen festgestellt werden konnte, wenn nur ein Spannungsteiler an den Eingang angeschlossen war. \
+Es wurden viele verschiedene Verstärker Schaltungen getestet, AC-Coupled, DC-Coupled, Inverting und Non-Inverting, aber keine hatte den gewünschten Effekt der Aufweitung des Dioden-Rauschens gebracht.
 
 ## Messen des Rauschen des Arduino ADC
 

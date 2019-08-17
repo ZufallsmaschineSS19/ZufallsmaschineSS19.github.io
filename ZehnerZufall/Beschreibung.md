@@ -42,6 +42,5 @@ Wenn man die Zahlen näher betrachtet, fällt auf, dass von 256 Werten (8 Bit in
 ## Auswertung
 
 ## Quellen
-1. \
-\
-2. Building a Low-Cost White-Noise Generator (2005) https://www.maximintegrated.com/en/app-notes/index.mvp/id/3469 \
+1. 
+2. Building a Low-Cost White-Noise Generator (2005) https://www.maximintegrated.com/en/app-notes/index.mvp/id/3469
